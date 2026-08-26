@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!--
+  ACCANTA TEC · Compras — site comercial
+  PÚBLICO: farmácia independente, associada e pequena rede.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accanta Tec · Compras — sua cotação pronta, sem tomar a sua semana</title>
+<meta name="description" content="A Accanta monta a cotação da sua farmácia pelo giro e pelo estoque, envia aos seus fornecedores, compara item a item e devolve a compra pronta para conferir. 30 dias grátis, depois R$ 129 por mês por CNPJ.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://accanta.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Accanta Tec">
+<meta property="og:title" content="Quantos dias da sua semana a cotação leva?">
+<meta property="og:description" content="A Accanta monta, envia e compara a cotação da sua farmácia. Você confere e fecha.">
+<meta property="og:url" content="https://accanta.com.br/">
+<meta property="og:image" content="https://accanta.com.br/og-accanta.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://accanta.com.br/#org","name":"Accanta Tec","slogan":"Tecnologia ao seu lado","url":"https://accanta.com.br/","address":{"@type":"PostalAddress","addressLocality":"Nova Lima","addressRegion":"MG","addressCountry":"BR"}},
+{"@type":"SoftwareApplication","name":"Accanta Compras","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://accanta.com.br/","publisher":{"@id":"https://accanta.com.br/#org"},"description":"Sistema de cotação e compras para farmácias independentes, associadas e pequenas redes. Monta a cotação a partir do estoque e do giro, envia aos fornecedores da própria farmácia, compara item a item e devolve a compra pronta para conferência, com histórico auditado.","offers":{"@type":"Offer","priceCurrency":"BRL","price":"129.00","description":"Assinatura mensal por CNPJ, a partir do segundo mês. Primeiros 30 dias gratuitos.","priceSpecification":{"@type":"UnitPriceSpecification","price":"129.00","priceCurrency":"BRL","unitText":"MÊS"}}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Preciso trocar o sistema da minha farmácia?","acceptedAnswer":{"@type":"Answer","text":"Não. A Accanta usa o arquivo que o seu sistema já exporta e devolve o pedido pronto para lançar. Ela trabalha antes do seu sistema, na hora de comprar."}},
+{"@type":"Question","name":"Meus fornecedores precisam se cadastrar?","acceptedAnswer":{"@type":"Answer","text":"Não. Cada um recebe a mesma planilha por e-mail ou WhatsApp, preenche e devolve. Não precisam criar conta em lugar nenhum e continuam sendo seus fornecedores."}},
+{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"R$ 129 por mês por CNPJ, a partir do segundo mês. Os primeiros 30 dias são gratuitos. Sem taxa de implantação, sem cobrança por item e sem limite de usuários, cotações ou fornecedores."}},
+{"@type":"Question","name":"Meus preços de compra ficam visíveis para alguém?","acceptedAnswer":{"@type":"Answer","text":"Não. Cada farmácia é isolada no próprio banco de dados, e isso é testado a cada nova versão do sistema. Nenhum fornecedor vê a proposta do outro."}},
+{"@type":"Question","name":"Sou de uma rede associativa. Funciona?","acceptedAnswer":{"@type":"Answer","text":"Sim, e é onde rende mais. As condições negociadas pela central entram na comparação, e no fim do período você vê quanto elas renderam de verdade."}}]}]}
+</script>
+
+<style>
+:root{
+  --paper:#EFF2F3; --white:#fff;
+  --ink:#06182A; --ink-2:#0B2B45;
+  --slate:#4E6376; --soft:#7B8FA0;
+  --rule:rgba(6,24,42,.13); --rule-2:rgba(6,24,42,.07);
+  --amber:#FBD24E; --azul:#0B3FA8; --amber-soft:#FFF0CC;
+  --line-d:rgba(255,255,255,.11);
+  --ui:'Archivo',system-ui,sans-serif;
+  --ed:'Newsreader',Georgia,serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --wrap:1200px; --pad:clamp(20px,4.6vw,56px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-size:16.5px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+p{margin:0} img{max-width:100%;display:block} a{color:inherit}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+h1{font-size:clamp(34px,5.4vw,62px)}
+h2{font-size:clamp(28px,4.2vw,48px)}
+h3{font-size:19px;font-weight:700;letter-spacing:-.015em;line-height:1.3}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--slate)}
+.eyebrow.a{color:#8F6300}
+.ed{font-family:var(--ui);font-weight:400;font-size:clamp(16.5px,1.75vw,19px);line-height:1.62;color:var(--slate)}
+.ed b{font-weight:500;color:var(--ink)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+.logo{height:100%;width:auto;display:block}
+.marca{display:flex;align-items:center;text-decoration:none;flex:none}
+.top{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(6,24,42,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.top-in{display:flex;align-items:center;gap:20px;height:62px}
+.mark{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark-fallback{width:25px;height:25px;flex:none;border-radius:7px;background:var(--ink);display:grid;place-items:center}
+.mark-fallback::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 11px 3px rgba(251,210,78,.7)}
+.mark-txt{font-weight:800;font-size:18px;letter-spacing:-.025em}
+.mark-txt span{font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.2em;color:var(--soft);margin-left:6px;text-transform:uppercase}
+.top nav{display:flex;gap:22px;margin-left:auto;font-size:14px;color:rgba(255,255,255,.7)}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:#fff}
+@media(max-width:1040px){.top nav{display:none}}
+.cta-top{margin-left:auto}
+@media(min-width:1041px){.cta-top{margin-left:6px}}
+
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;font-weight:600;padding:11px 20px;border-radius:3px;border:1px solid transparent;text-decoration:none;cursor:pointer;transition:transform .18s,background .2s,border-color .2s,color .2s}
+.btn-amber{background:var(--amber);color:#241800}
+.btn-amber:hover{background:#ffdd6e;transform:translateY(-1px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--ink-2);transform:translateY(-1px)}
+.btn-out{border-color:var(--rule);color:var(--ink)}
+.btn-out:hover{border-color:var(--ink)}
+.btn-lg{font-size:16px;padding:15px 27px}
+
+.hero{padding:calc(62px + clamp(48px,7vw,88px)) 0 clamp(48px,6vw,72px)}
+.hero-grid{display:grid;gap:38px;align-items:start}
+@media(min-width:980px){.hero-grid{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);gap:60px}}
+.hero h1{margin:20px 0 22px}
+.hero h1 .u{background:linear-gradient(transparent 62%,var(--amber-soft) 62%);padding:0 2px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-note{margin-top:18px;font-family:var(--mono);font-size:12px;color:var(--soft);letter-spacing:.02em;line-height:1.7}
+
+.calc{background:var(--white);border:1px solid var(--rule);padding:clamp(24px,3vw,32px)}
+.calc-lab{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate)}
+.calc h3{margin:12px 0 24px;font-size:clamp(20px,2.4vw,25px);font-weight:800;letter-spacing:-.025em;line-height:1.15}
+.row{margin-bottom:22px}
+.row>span.lb{display:block;font-size:14px;font-weight:600;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{font-family:var(--mono);font-size:13.5px;padding:9px 14px;border:1px solid var(--rule);background:var(--paper);color:var(--slate);border-radius:3px;cursor:pointer;transition:all .18s}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.calc-out{border-top:1px solid var(--rule);padding-top:22px;margin-top:26px}
+.big{font-size:clamp(46px,7vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1;font-variant-numeric:tabular-nums}
+.big small{font-size:.27em;font-weight:600;letter-spacing:0;color:var(--slate);margin-left:10px}
+.calc-out p{margin-top:14px;font-family:var(--ui);font-weight:400;font-size:18px;line-height:1.5;color:var(--slate)}
+.calc-out p b{font-weight:500;color:var(--ink)}
+
+.asks{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:clamp(36px,5vw,52px)}
+@media(min-width:820px){.asks{grid-template-columns:1fr 1fr}}
+.ask{background:var(--white);padding:clamp(26px,3vw,34px)}
+.ask q{display:block;font-family:var(--ed);font-weight:400;font-size:clamp(20px,2.3vw,24px);line-height:1.34;color:var(--ink);quotes:none}
+.ask q::before{content:'';display:block;width:22px;height:2px;background:var(--amber);margin-bottom:18px}
+.ask p{margin-top:16px;font-size:15.5px;color:var(--slate);line-height:1.6}
+
+section{padding:clamp(66px,8vw,110px) 0}
+.head{max-width:46ch}
+.head h2{margin:16px 0 18px}
+.dark{background:var(--ink);color:#fff}
+.dark .ed{color:rgba(255,255,255,.72)}
+.dark .ed b{color:#fff}
+.dark .eyebrow{color:var(--soft)}
+.dark h2,.dark h3{color:#fff}
+
+.steps{margin-top:clamp(36px,5vw,52px);border-top:1px solid var(--line-d)}
+.st{display:grid;gap:10px;padding:26px 0;border-bottom:1px solid var(--line-d);align-items:baseline}
+@media(min-width:860px){.st{grid-template-columns:80px minmax(0,270px) minmax(0,1fr);gap:30px}}
+.st .n{font-family:var(--mono);font-size:12px;letter-spacing:.16em;color:var(--soft)}
+.st p{font-family:var(--ui);font-weight:400;font-size:17px;line-height:1.52;color:rgba(255,255,255,.7)}
+.st.me .n{color:var(--amber)}
+
+.head-2{display:grid;gap:26px}
+@media(min-width:920px){.head-2{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,5vw,72px);align-items:start}}
+.head-2 h2{margin:16px 0 0}
+.factors{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid var(--rule)}
+.factors li{padding:13px 0 13px 30px;border-bottom:1px solid var(--rule);position:relative;font-size:15.5px;color:var(--slate)}
+.factors li::before{content:'';position:absolute;left:0;top:22px;width:14px;height:2px;background:var(--amber)}
+.regua{margin-top:clamp(30px,4vw,44px);border:1px solid var(--line-d);border-radius:4px;padding:26px 24px}
+.regua h3{font-size:20px;margin-bottom:14px}
+.regua ul{list-style:none;margin:0;padding:0}
+.regua li{position:relative;padding:9px 0 9px 22px;font-size:16px;color:rgba(255,255,255,.72);line-height:1.55}
+.regua li::before{content:'';position:absolute;left:0;top:19px;width:10px;height:2px;background:var(--amber)}
+.regua li b{color:#fff;font-weight:600}
+.verdemo{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:clamp(30px,4vw,44px);background:var(--amber-soft);border:1px solid rgba(251,210,78,.45);border-radius:4px;padding:24px}
+.verdemo>div{flex:1 1 260px}
+.verdemo b{display:block;font-size:20px;font-weight:800;letter-spacing:-.025em;color:var(--ink);margin-bottom:6px}
+.verdemo p{font-size:15.5px;color:#6B5520;line-height:1.5}
+.field-box{margin-top:clamp(34px,4.6vw,50px);border:1px solid var(--line-d);background:var(--ink)}
+.fb-bar{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:15px 18px;border-bottom:1px solid var(--line-d)}
+.fb-lab{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.fb-count{font-family:var(--mono);font-size:13px;margin-left:auto;color:#fff}
+.fb-count b{color:var(--amber);font-weight:500;font-size:16px}
+.sw{display:inline-flex;align-items:center;gap:10px;cursor:pointer;user-select:none;font-size:14px;font-weight:600;color:#fff}
+.sw input{position:absolute;opacity:0;width:0;height:0}
+.sw .tr{width:46px;height:25px;border-radius:30px;background:rgba(255,255,255,.16);position:relative;transition:background .3s;flex:none}
+.sw .tr::after{content:'';position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.sw input:checked + .tr{background:var(--amber)}
+.sw input:checked + .tr::after{transform:translateX(21px)}
+.sw input:focus-visible + .tr{outline:2px solid var(--amber);outline-offset:3px}
+.fw{padding:20px 18px}
+#field{display:block;width:100%}
+.fb-say{padding:0 18px 20px;font-family:var(--ui);font-weight:400;font-size:17px;line-height:1.5;color:rgba(255,255,255,.7);max-width:74ch;min-height:50px}
+.fb-say b{font-weight:500;color:#fff}
+
+.safe{margin-top:clamp(34px,4.6vw,50px);display:grid;gap:1px;background:var(--line-d);border:1px solid var(--line-d)}
+@media(min-width:700px){.safe{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.safe{grid-template-columns:repeat(3,1fr)}}
+.safe>div{background:var(--ink-2);padding:26px 24px}
+.safe h3{font-size:16.5px;margin-bottom:9px}
+.safe p{font-size:15px;color:rgba(255,255,255,.66);line-height:1.58}
+
+.price{margin-top:clamp(34px,4.6vw,50px);border:1px solid var(--rule);display:grid;gap:1px;background:var(--rule)}
+@media(min-width:900px){.price{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.price>div{background:var(--white);padding:clamp(26px,3.2vw,38px)}
+.price>div.offer{background:var(--amber-soft)}
+.offer-big{display:flex;align-items:center;gap:16px;margin:16px 0 18px}
+.offer-big b{font-size:clamp(72px,11vw,116px);font-weight:800;letter-spacing:-.06em;line-height:.82;color:var(--ink)}
+.offer-big span{font-size:clamp(22px,2.8vw,30px);font-weight:800;letter-spacing:-.03em;line-height:1.02;color:var(--ink)}
+.then{border-top:1px solid rgba(251,210,78,.5);padding-top:18px;margin-bottom:16px}
+.then-lab{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8F6300;margin-bottom:6px}
+.then-val{display:block;font-size:clamp(34px,4.4vw,46px);font-weight:800;letter-spacing:-.035em;color:var(--ink);line-height:1}
+.then-val i{font-style:normal;font-size:.4em;font-weight:600;letter-spacing:-.01em;color:#6B5520;margin-left:10px}
+.price>div.offer p{color:#6B5520}
+.pill-offer{display:inline-flex;align-items:center;gap:10px;margin-top:26px;font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#7A5400;background:var(--amber-soft);border:1px solid rgba(251,210,78,.5);padding:9px 15px;border-radius:2px}
+.pill-offer i{width:7px;height:7px;border-radius:50%;background:var(--amber);box-shadow:0 0 9px 2px rgba(251,210,78,.6);flex:none}
+.price-unit{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8F6300}
+.price h3{font-size:clamp(24px,3.2vw,34px);font-weight:800;letter-spacing:-.03em;margin:14px 0 18px;line-height:1.1}
+.price p{font-family:var(--ui);font-weight:400;font-size:17.5px;line-height:1.52;color:var(--slate)}
+.incl{list-style:none;margin:0;padding:0}
+.incl li{padding:11px 0 11px 26px;border-bottom:1px solid var(--rule-2);font-size:15px;color:var(--slate);position:relative}
+.incl li:last-child{border-bottom:0}
+.incl li::before{content:'+';position:absolute;left:0;top:11px;font-family:var(--mono);color:#8F6300}
+.incl .out::before{content:'–';color:var(--soft)}
+
+.recep{background:var(--white);border:1px solid var(--rule);padding:clamp(26px,3.2vw,38px);margin-top:clamp(32px,4.2vw,48px);max-width:840px}
+.q-step{display:none}
+.q-step.on{display:block;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.q-lab{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate)}
+.q-ask{font-weight:800;font-size:clamp(20px,2.5vw,26px);letter-spacing:-.025em;margin:12px 0 20px;line-height:1.18}
+.opts{display:grid;gap:9px}
+@media(min-width:620px){.opts{grid-template-columns:1fr 1fr}}
+.opt{text-align:left;font-family:var(--ui);font-size:15.5px;font-weight:500;color:var(--ink);background:var(--paper);border:1px solid transparent;padding:15px 17px;border-radius:3px;cursor:pointer;transition:all .18s}
+.opt:hover{border-color:var(--ink);transform:translateY(-1px)}
+.q-prog{display:flex;gap:6px;margin-bottom:20px}
+.q-prog i{height:2px;flex:1;background:var(--rule);transition:background .3s}
+.q-prog i.done{background:var(--amber)}
+.q-back{margin-top:16px;background:none;border:0;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);cursor:pointer;padding:0}
+.q-back:hover{color:var(--ink)}
+#qBody{font-family:var(--ui);font-weight:400;font-size:18.5px;line-height:1.5;color:var(--slate);margin:12px 0 22px}
+#qBody b{font-weight:500;color:var(--ink)}
+.q-actions{display:flex;gap:11px;flex-wrap:wrap}
+
+details{border-bottom:1px solid var(--rule);padding:21px 0}
+summary{font-weight:700;font-size:18px;letter-spacing:-.015em;cursor:pointer;list-style:none;display:flex;gap:16px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';margin-left:auto;font-family:var(--mono);color:#8F6300;flex:none}
+details[open] summary::after{content:'–'}
+details p{margin-top:11px;font-family:var(--ui);font-weight:400;font-size:17px;line-height:1.5;color:var(--slate);max-width:66ch}
+
+.close{padding:clamp(74px,9vw,124px) 0}
+.close h2{max-width:19ch}
+.close h2 .u{background:linear-gradient(transparent 64%,rgba(251,210,78,.32) 64%);padding:0 3px}
+.tagline-line{margin-top:26px;font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#fff}
+.tagline-line::before{content:'';display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px 2px rgba(251,210,78,.6);margin-right:12px;vertical-align:middle}
+
+footer{background:var(--ink);color:var(--soft);padding:42px 0 38px;font-size:13.5px;border-top:1px solid var(--line-d)}
+.foot{display:flex;flex-wrap:wrap;gap:26px;justify-content:space-between}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff}
+.foot-nav{display:flex;gap:18px;flex-wrap:wrap}
+footer .mark-fallback{background:#0B2B45}
+
+.rv{opacity:0;transform:translateY(18px);transition:opacity .75s cubic-bezier(.16,.8,.3,1),transform .75s cubic-bezier(.16,.8,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap top-in">
+    <a class="marca" href="#topo" aria-label="Accanta Tec, início" style="height:30px"><svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 770.49 215.40" role="img" aria-label="Accanta Tec"><title>Accanta Tec</title><g transform="translate(28.81,28.81)"><g fill="#FBD24E" stroke="#FBD24E" transform="translate(0.00,0.00) scale(0.7560)"><g transform="translate(-20.00,-14.00)"><path fill-rule="evenodd" d="M107.35,163.97 C107.97,163.41 107.88,163.43 109.68,163.42 C111.01,163.41 111.01,163.41 111.55,162.93 C111.91,162.60 112.26,162.42 112.65,162.36 C113.02,162.29 113.39,162.11 113.71,161.83 C114.01,161.55 114.38,161.37 114.76,161.31 C115.23,161.22 115.49,161.04 116.32,160.25 C117.15,159.44 117.40,159.28 117.89,159.20 C118.80,159.05 127.29,150.57 127.42,149.67 C127.49,149.20 127.66,148.95 128.47,148.09 C129.25,147.27 129.46,146.97 129.54,146.53 C129.59,146.19 129.80,145.76 130.06,145.45 C130.32,145.15 130.54,144.71 130.59,144.40 C130.64,144.08 130.86,143.64 131.12,143.35 C131.39,143.02 131.59,142.60 131.65,142.26 C131.73,141.81 131.89,141.54 132.49,140.94 C133.46,139.97 133.89,139.93 134.80,140.72 C135.17,141.02 135.55,141.24 135.74,141.24 C136.15,141.24 136.54,141.43 137.01,141.87 C137.34,142.18 137.54,142.23 138.48,142.29 C139.52,142.37 139.61,142.40 140.12,142.85 C140.66,143.35 140.66,143.35 146.43,143.35 C152.21,143.35 152.21,143.35 152.52,143.01 C153.03,142.45 153.47,142.29 154.44,142.29 C155.28,142.29 155.37,142.26 155.82,141.83 C156.11,141.56 156.49,141.35 156.80,141.29 C157.43,141.18 157.97,140.91 158.07,140.65 C158.11,140.55 158.40,140.39 158.71,140.31 C159.67,140.04 160.01,139.89 160.14,139.64 C160.21,139.52 160.52,139.34 160.82,139.25 C161.78,138.99 162.12,138.84 162.24,138.60 C162.36,138.38 162.76,138.21 163.59,138.02 C164.08,137.92 170.48,131.53 170.59,131.04 C170.63,130.86 170.69,130.56 170.73,130.37 C170.77,130.17 171.39,129.44 172.24,128.60 C173.08,127.77 173.71,127.04 173.75,126.84 C173.78,126.65 173.84,126.36 173.88,126.18 C173.92,125.99 174.13,125.66 174.34,125.45 C174.56,125.23 174.77,124.88 174.81,124.68 C174.85,124.49 174.92,124.20 174.95,124.03 C174.98,123.87 175.18,123.56 175.39,123.34 C175.61,123.13 175.82,122.80 175.85,122.61 C175.89,122.43 175.95,122.14 175.99,121.96 C176.03,121.77 176.24,121.43 176.45,121.21 C176.67,120.98 176.88,120.64 176.92,120.45 C176.96,120.27 177.02,119.98 177.05,119.82 C177.08,119.65 177.32,119.29 177.57,119.01 C178.00,118.55 178.02,118.45 178.02,117.63 C178.02,116.67 178.13,116.41 178.71,115.74 C179.03,115.36 179.07,115.20 179.07,114.44 C179.07,113.52 179.18,113.24 179.76,112.58 C180.13,112.15 180.13,112.15 180.13,103.80 C180.13,95.45 180.13,95.45 179.76,95.02 C179.15,94.32 179.07,94.09 179.07,92.63 C179.07,91.29 179.06,91.23 178.71,90.81 C178.13,90.15 178.02,89.87 178.02,88.95 C178.02,88.19 177.98,88.03 177.65,87.65 C177.16,87.08 176.97,86.73 176.97,86.32 C176.97,86.14 176.80,85.79 176.60,85.55 C176.11,84.98 175.92,84.62 175.92,84.21 C175.92,84.03 175.75,83.68 175.55,83.44 C175.05,82.87 174.86,82.52 174.86,82.08 C174.86,81.83 174.62,81.47 173.97,80.80 C172.96,79.75 172.76,79.44 172.76,78.92 C172.76,78.63 172.37,78.16 170.80,76.58 C168.76,74.51 168.55,74.24 168.55,73.67 C168.55,73.23 168.01,72.68 167.56,72.68 C166.99,72.68 166.74,72.47 164.14,69.91 C162.11,67.88 161.56,67.42 161.26,67.42 C160.83,67.42 160.47,67.24 159.89,66.75 C159.66,66.54 159.32,66.37 159.13,66.37 C158.63,66.37 158.32,66.16 157.28,65.17 C156.60,64.51 156.25,64.26 155.99,64.26 C155.57,64.26 155.21,64.08 154.63,63.59 C154.40,63.38 154.05,63.21 153.86,63.21 C153.46,63.21 153.09,63.02 152.53,62.54 C152.29,62.33 151.95,62.16 151.76,62.16 C151.36,62.16 150.99,61.97 150.42,61.48 C150.04,61.15 149.88,61.11 149.13,61.11 C148.20,61.11 147.93,61.01 147.26,60.43 C146.85,60.06 146.78,60.05 145.44,60.05 C143.99,60.05 143.73,59.98 143.12,59.41 C142.76,59.07 142.69,59.06 140.60,59.00 C138.46,58.94 138.46,58.94 137.92,58.44 C137.37,57.95 137.37,57.95 131.13,57.95 C124.87,57.95 124.87,57.95 124.44,58.33 C123.67,58.99 123.62,59.00 120.47,59.00 C117.51,59.00 117.51,59.00 117.07,59.38 C116.34,60.02 116.18,60.05 114.09,60.05 C112.13,60.05 112.13,60.05 111.75,60.42 C111.04,61.14 111.55,61.11 100.00,61.11 C88.47,61.11 89.00,61.14 88.19,60.43 C87.76,60.05 87.76,60.05 85.84,60.05 C83.82,60.05 83.66,60.01 82.93,59.38 C82.49,59.00 82.49,59.00 79.53,59.00 C76.38,59.00 76.33,58.99 75.56,58.33 C74.87,57.74 63.94,57.74 63.26,58.33 C62.51,58.98 62.40,59.00 59.82,59.00 C57.38,59.00 57.38,59.00 56.95,59.38 C56.24,59.99 56.01,60.05 54.56,60.05 C53.22,60.05 53.15,60.06 52.74,60.43 C52.07,61.01 51.80,61.11 50.87,61.11 C50.12,61.11 49.96,61.15 49.58,61.48 C49.01,61.97 48.64,62.16 48.24,62.16 C48.05,62.16 47.71,62.33 47.47,62.54 C46.91,63.02 46.54,63.21 46.14,63.21 C45.96,63.21 45.57,63.42 45.26,63.67 C44.96,63.93 44.58,64.16 44.43,64.19 C44.27,64.22 43.98,64.28 43.78,64.33 C43.57,64.37 43.09,64.74 42.66,65.20 C41.84,66.06 41.37,66.37 40.87,66.37 C40.69,66.37 40.31,66.58 40.00,66.83 C39.69,67.08 39.31,67.32 39.13,67.36 C38.96,67.39 38.67,67.45 38.51,67.48 C38.08,67.57 27.39,78.27 27.31,78.68 C27.26,78.86 27.20,79.16 27.16,79.35 C27.12,79.57 26.51,80.29 25.58,81.22 C24.07,82.73 24.07,82.73 24.08,83.63 C24.08,84.60 23.98,84.88 23.42,85.53 C23.22,85.76 23.03,86.18 22.98,86.48 C22.93,86.84 22.74,87.21 22.43,87.54 C22.00,88.01 21.98,88.11 21.98,88.93 C21.98,89.87 21.87,90.15 21.29,90.81 C20.94,91.23 20.93,91.29 20.93,92.63 C20.93,94.09 20.85,94.32 20.24,95.02 C19.67,95.67 19.64,112.03 20.21,112.56 C20.76,113.07 20.93,113.52 20.93,114.51 C20.93,115.32 20.96,115.45 21.25,115.73 C21.81,116.24 21.98,116.68 21.98,117.66 C21.98,118.52 22.00,118.60 22.43,119.05 C22.69,119.34 22.92,119.74 22.97,120.02 C23.08,120.64 23.36,121.18 23.60,121.27 C23.78,121.35 23.96,121.78 24.14,122.58 C24.18,122.77 24.39,123.13 24.61,123.37 C24.82,123.60 25.03,124.00 25.08,124.26 C25.19,124.85 25.42,125.32 25.77,125.63 C25.93,125.77 26.08,126.09 26.14,126.36 C26.26,127.05 26.40,127.26 27.33,128.20 C27.79,128.66 28.19,129.18 28.23,129.35 C28.26,129.52 28.33,129.82 28.37,130.01 C28.44,130.39 35.46,137.57 36.05,137.87 C36.23,137.97 36.60,138.08 36.85,138.13 C37.12,138.18 37.44,138.34 37.58,138.49 C37.89,138.84 38.37,139.07 38.96,139.18 C39.22,139.23 39.55,139.39 39.68,139.55 C40.00,139.89 40.46,140.13 41.05,140.23 C41.31,140.27 41.75,140.53 42.03,140.78 C42.55,141.24 42.55,141.24 43.98,141.24 C45.65,141.24 45.69,141.25 46.87,142.44 C47.76,143.35 47.76,143.35 53.55,143.35 C59.34,143.35 59.34,143.35 59.88,142.85 C60.39,142.40 60.48,142.37 61.52,142.29 C62.54,142.23 62.65,142.19 63.05,141.80 C63.36,141.51 63.69,141.34 64.12,141.25 C64.54,141.18 64.91,140.99 65.26,140.66 C66.15,139.86 66.51,139.95 67.93,141.34 C69.37,142.75 69.39,142.79 69.40,143.95 C69.41,144.83 69.43,144.92 69.88,145.41 C70.21,145.77 70.40,146.13 70.46,146.52 C70.54,147.00 70.72,147.26 71.51,148.08 C72.32,148.91 72.48,149.16 72.57,149.66 C72.65,150.18 72.83,150.42 74.15,151.77 C75.46,153.11 75.63,153.34 75.73,153.87 C75.86,154.73 77.04,155.91 77.89,156.04 C78.44,156.13 78.65,156.31 80.53,158.15 C82.37,159.97 82.62,160.17 83.14,160.25 C83.52,160.32 83.88,160.49 84.19,160.78 C84.51,161.05 84.87,161.24 85.24,161.31 C85.62,161.36 85.99,161.55 86.29,161.83 C86.61,162.11 86.98,162.29 87.35,162.36 C87.74,162.42 88.09,162.60 88.45,162.93 C88.99,163.41 88.99,163.41 90.32,163.42 C92.11,163.43 92.04,163.41 92.60,163.92 C93.31,164.55 92.87,164.52 100.15,164.48 C106.80,164.46 106.80,164.46 107.35,163.97 Z M53.66,133.38 C53.12,132.88 53.12,132.88 51.52,132.82 C49.92,132.75 49.92,132.75 49.35,132.25 C48.79,131.79 48.73,131.77 47.81,131.77 C46.95,131.77 46.81,131.73 46.42,131.39 C45.85,130.89 45.48,130.72 45.08,130.72 C44.89,130.72 44.55,130.54 44.32,130.34 C43.74,129.83 43.38,129.66 42.94,129.66 C42.52,129.66 35.83,123.12 35.72,122.59 C35.68,122.42 35.62,122.14 35.59,121.95 C35.55,121.76 35.07,121.14 34.54,120.57 C33.56,119.55 33.56,119.55 33.56,118.58 C33.56,117.64 33.54,117.59 33.03,116.98 C32.73,116.61 32.51,116.20 32.51,116.02 C32.51,115.61 32.31,115.22 31.86,114.75 C31.54,114.40 31.51,114.28 31.45,112.76 C31.38,111.15 31.38,111.15 30.88,110.60 C30.40,110.05 30.40,110.05 30.40,106.56 C30.40,102.94 30.35,102.61 29.81,102.17 C29.49,101.91 29.56,101.52 30.00,101.02 C30.27,100.71 30.40,100.43 30.40,100.12 C30.40,99.80 30.27,99.53 30.00,99.22 C29.56,98.72 29.49,98.33 29.81,98.07 C30.11,97.82 30.40,97.22 30.40,96.84 C30.40,96.65 30.61,96.26 30.93,95.91 C31.45,95.29 31.45,95.29 31.45,93.80 C31.45,92.29 31.45,92.29 31.91,91.78 C32.22,91.43 32.41,91.06 32.48,90.65 C32.56,90.24 32.74,89.88 33.01,89.61 C33.28,89.33 33.45,88.98 33.54,88.56 C33.61,88.14 33.79,87.79 34.06,87.51 C34.34,87.22 34.51,86.87 34.59,86.44 C34.69,85.91 34.84,85.67 35.64,84.87 C36.44,84.06 36.59,83.84 36.69,83.29 C36.87,82.33 38.96,80.24 39.92,80.06 C40.52,79.96 40.69,79.81 42.55,77.97 C44.39,76.14 44.59,75.98 45.20,75.84 C45.75,75.73 46.00,75.55 46.78,74.79 C47.55,74.03 47.81,73.85 48.36,73.74 C48.76,73.64 49.17,73.44 49.41,73.21 C49.65,72.98 50.05,72.77 50.45,72.68 C50.86,72.59 51.28,72.38 51.60,72.08 C52.08,71.65 52.16,71.63 53.08,71.63 C54.04,71.63 54.08,71.62 54.67,71.11 C55.26,70.59 55.31,70.58 56.25,70.58 C57.19,70.58 57.24,70.57 57.83,70.05 C58.44,69.53 58.44,69.53 59.94,69.53 C61.43,69.53 61.43,69.53 62.04,69.00 C62.65,68.47 62.65,68.47 69.41,68.47 C76.17,68.47 76.17,68.47 76.78,69.00 C77.39,69.53 77.39,69.53 79.41,69.53 C81.43,69.53 81.43,69.53 82.04,70.05 C82.63,70.57 82.67,70.58 83.63,70.58 C84.79,70.58 85.26,70.88 85.26,71.65 C85.26,72.22 83.79,73.74 83.24,73.74 C82.60,73.74 82.22,74.06 78.47,77.84 C74.96,81.38 74.77,81.60 74.68,82.16 C74.61,82.65 74.45,82.89 73.63,83.74 C72.82,84.57 72.66,84.81 72.58,85.31 C72.52,85.69 72.35,86.05 72.05,86.37 C71.77,86.68 71.59,87.04 71.53,87.42 C71.46,87.80 71.28,88.16 71.00,88.47 C70.71,88.81 70.54,89.15 70.47,89.56 C70.41,89.95 70.26,90.25 70.04,90.46 C69.55,90.93 69.32,91.56 69.41,92.20 C69.53,92.97 69.36,93.31 68.37,94.27 C67.42,95.20 67.17,95.72 67.29,96.47 C67.40,97.07 67.22,97.58 66.78,97.97 C66.31,98.38 66.14,99.02 66.23,100.06 C66.34,101.21 66.24,101.65 65.76,102.18 C65.16,102.85 65.13,103.06 65.14,105.89 C65.15,107.35 65.15,108.67 65.15,108.83 C65.14,109.00 64.91,109.38 64.64,109.67 C64.15,110.22 64.15,110.22 64.12,119.44 C64.11,124.52 64.08,128.78 64.08,128.91 C64.07,129.41 62.80,130.55 62.07,130.71 C61.63,130.80 61.24,131.00 60.91,131.31 C60.42,131.75 60.35,131.77 59.41,131.77 C58.46,131.77 58.40,131.79 57.92,132.22 C57.60,132.51 57.18,132.73 56.78,132.82 C56.37,132.91 55.96,133.13 55.63,133.41 C54.94,134.04 54.40,134.03 53.66,133.38 Z M144.27,133.35 C143.68,132.83 143.64,132.82 142.69,132.82 C141.76,132.82 141.68,132.79 141.21,132.36 C140.88,132.07 140.47,131.85 140.05,131.76 C139.66,131.67 139.25,131.46 139.01,131.24 C138.77,131.00 138.37,130.80 137.96,130.72 C137.23,130.55 136.28,129.76 135.99,129.06 C135.85,128.76 135.81,126.68 135.82,119.43 C135.82,110.18 135.82,110.18 135.35,109.65 C134.79,109.04 134.83,109.29 134.81,106.27 C134.79,103.87 134.79,103.87 134.38,103.44 C133.77,102.81 133.68,102.46 133.74,100.75 C133.80,98.84 133.76,98.61 133.26,98.07 C132.75,97.51 132.60,97.07 132.69,96.42 C132.79,95.77 132.65,95.36 132.12,94.79 C131.86,94.51 131.68,94.15 131.63,93.79 C131.58,93.42 131.40,93.05 131.11,92.73 C130.82,92.40 130.63,92.04 130.58,91.67 C130.53,91.32 130.35,90.95 130.05,90.62 C129.77,90.29 129.58,89.94 129.53,89.57 C129.47,89.21 129.28,88.83 129.00,88.49 C128.73,88.17 128.53,87.78 128.47,87.42 C128.41,87.04 128.23,86.68 127.95,86.37 C127.65,86.05 127.48,85.69 127.42,85.31 C127.34,84.81 127.18,84.57 126.37,83.74 C125.55,82.89 125.39,82.65 125.32,82.16 C125.23,81.60 125.04,81.38 121.53,77.84 C117.78,74.06 117.40,73.74 116.76,73.74 C116.21,73.74 114.74,72.22 114.74,71.65 C114.74,70.88 115.21,70.58 116.37,70.58 C117.33,70.58 117.37,70.57 117.96,70.05 C118.57,69.53 118.57,69.53 121.12,69.53 C123.66,69.53 123.66,69.53 124.27,69.00 C124.88,68.47 124.88,68.47 131.12,68.47 C137.35,68.47 137.35,68.47 137.96,69.00 C138.57,69.53 138.57,69.53 140.06,69.53 C141.56,69.53 141.56,69.53 142.17,70.05 C142.76,70.57 142.81,70.58 143.75,70.58 C144.69,70.58 144.74,70.59 145.33,71.11 C145.92,71.62 145.96,71.63 146.92,71.63 C147.84,71.63 147.92,71.65 148.40,72.08 C148.72,72.38 149.14,72.59 149.55,72.68 C149.95,72.77 150.35,72.98 150.59,73.21 C150.83,73.44 151.24,73.64 151.64,73.74 C152.20,73.85 152.45,74.03 153.24,74.81 C154.04,75.60 154.27,75.76 154.82,75.86 C155.42,75.97 155.60,76.12 157.45,77.96 C159.31,79.81 159.48,79.96 160.08,80.07 C161.04,80.25 163.07,82.27 163.28,83.26 C163.41,83.83 163.57,84.07 164.34,84.85 C165.11,85.62 165.27,85.88 165.40,86.43 C165.48,86.84 165.68,87.24 165.92,87.48 C166.15,87.73 166.36,88.14 166.44,88.53 C166.54,88.95 166.76,89.36 167.04,89.68 C167.47,90.16 167.49,90.23 167.49,91.17 C167.49,92.12 167.52,92.16 168.02,92.75 C168.54,93.34 168.55,93.39 168.55,94.33 C168.55,95.27 168.57,95.32 169.07,95.91 C169.60,96.52 169.60,96.52 169.60,103.28 C169.60,110.04 169.60,110.04 169.21,110.49 C168.75,111.02 168.72,111.27 169.07,111.73 C169.42,112.17 169.41,112.37 169.00,112.92 C168.81,113.17 168.60,113.61 168.53,113.92 C168.46,114.21 168.23,114.64 168.02,114.86 C167.77,115.12 167.59,115.48 167.52,115.89 C167.44,116.32 167.26,116.66 166.99,116.95 C166.72,117.22 166.55,117.58 166.46,118.00 C166.39,118.42 166.21,118.77 165.94,119.05 C165.66,119.33 165.49,119.68 165.41,120.11 C165.34,120.53 165.16,120.87 164.88,121.15 C164.62,121.42 164.43,121.80 164.34,122.23 C164.20,122.87 164.06,123.04 160.81,126.27 C158.01,129.07 157.36,129.66 157.06,129.66 C156.62,129.66 156.26,129.83 155.68,130.34 C155.45,130.54 155.11,130.72 154.92,130.72 C154.52,130.72 154.15,130.89 153.58,131.39 C153.19,131.73 153.05,131.77 152.18,131.77 C151.23,131.77 151.18,131.78 150.59,132.29 C150.00,132.80 149.96,132.82 149.01,132.82 C148.07,132.82 148.02,132.83 147.43,133.35 C146.84,133.85 146.80,133.87 145.85,133.87 C144.92,133.87 144.86,133.85 144.27,133.35 Z M111.13,56.72 C112.48,55.75 112.63,55.41 112.63,53.12 C112.63,51.16 112.63,51.16 112.24,50.71 C111.61,49.97 111.75,49.61 112.73,49.45 C113.58,49.32 118.87,43.95 119.00,43.08 C119.08,42.54 119.26,42.33 121.63,39.93 C124.00,37.53 124.18,37.32 124.26,36.77 C124.35,36.21 124.54,35.99 127.43,33.08 C130.32,30.18 130.51,29.95 130.59,29.39 C130.67,28.85 130.85,28.63 132.69,26.76 C134.55,24.89 134.72,24.67 134.80,24.13 C134.89,23.59 135.06,23.38 136.96,21.46 C139.01,19.39 139.01,19.39 139.02,18.41 C139.02,17.52 139.05,17.40 139.45,16.91 C140.01,16.21 139.98,16.14 138.62,14.79 C137.49,13.67 137.49,13.67 136.38,13.67 C135.26,13.67 135.26,13.67 133.55,15.39 C131.99,16.95 131.81,17.17 131.64,17.81 C131.42,18.68 131.36,18.74 130.57,18.88 C129.69,19.04 128.60,20.14 128.47,20.99 C128.39,21.53 128.19,21.76 125.84,24.14 C123.47,26.53 123.29,26.75 123.21,27.29 C123.13,27.83 122.95,28.05 121.11,29.93 C119.25,31.81 119.08,32.02 119.00,32.56 C118.92,33.12 118.73,33.34 115.59,36.49 C111.92,40.18 112.21,39.99 111.31,39.26 C110.98,38.99 110.89,38.99 99.95,38.99 C88.93,38.99 88.93,38.99 88.41,39.45 C87.31,40.45 86.55,40.19 86.25,38.72 C86.15,38.20 85.86,37.98 85.19,37.87 C84.52,37.77 84.29,37.53 84.15,36.69 C84.06,36.24 83.78,35.88 82.04,34.14 C80.21,32.26 80.03,32.04 79.95,31.51 C79.86,30.97 79.68,30.75 77.84,28.87 C76.00,27.00 75.82,26.78 75.74,26.24 C75.65,25.69 75.47,25.47 73.11,23.08 C70.73,20.69 70.55,20.47 70.46,19.92 C70.38,19.37 70.19,19.15 67.56,16.51 C64.74,13.67 64.74,13.67 63.62,13.67 C62.51,13.67 62.51,13.67 61.38,14.79 C59.96,16.19 59.82,16.43 59.89,17.51 C59.95,18.35 59.95,18.35 62.00,20.41 C63.88,22.33 64.05,22.54 64.14,23.07 C64.22,23.63 64.39,23.83 66.77,26.23 C69.15,28.63 69.32,28.84 69.41,29.39 C69.49,29.94 69.66,30.15 71.52,32.02 C73.36,33.91 73.53,34.12 73.62,34.65 C73.71,35.21 73.89,35.43 76.78,38.34 C79.49,41.08 79.86,41.49 79.94,41.96 C80.07,42.73 80.06,42.71 82.16,44.80 C83.87,46.52 84.07,46.77 84.16,47.27 C84.28,48.03 84.56,48.35 85.23,48.43 C85.59,48.48 85.96,48.65 86.27,48.93 C86.56,49.17 87.01,49.40 87.31,49.45 C88.26,49.63 88.38,49.93 87.78,50.68 C87.57,50.95 87.36,51.39 87.32,51.66 C87.26,51.93 87.08,52.33 86.91,52.54 C86.38,53.16 86.47,53.48 87.39,54.32 C88.06,54.93 88.22,55.16 88.37,55.74 C88.69,57.00 87.63,56.89 99.99,56.89 C109.05,56.89 110.91,56.86 111.13,56.72 Z M90.99,50.39 C90.44,50.11 89.74,49.28 89.74,48.94 C89.74,48.58 91.96,46.37 92.32,46.37 C92.85,46.37 107.32,46.37 107.61,46.37 C108.05,46.37 110.26,48.54 110.26,48.96 C110.26,49.52 110.09,49.53 101.98,49.53 C94.21,49.53 94.21,49.53 93.67,50.02 C93.02,50.60 91.74,50.78 90.99,50.39 Z"/><circle cx="65.66" cy="173.65" r="5.26"/><circle cx="81.37" cy="183.28" r="5.26"/><circle cx="99.47" cy="186.63" r="5.26"/><circle cx="117.58" cy="183.28" r="5.26"/><circle cx="133.28" cy="173.65" r="5.26"/><circle cx="51.58" cy="189.30" r="4.21"/><circle cx="65.87" cy="199.31" r="4.21"/><circle cx="82.16" cy="205.56" r="4.21"/><circle cx="99.47" cy="207.68" r="4.21"/><circle cx="116.79" cy="205.56" r="4.21"/><circle cx="133.08" cy="199.31" r="4.21"/><circle cx="147.37" cy="189.30" r="4.21"/></g></g><path d="M0.771728515625 0.0 26.602197265625 -68.70869140625H48.056347656250004L73.932470703125 0.0H54.7783203125L50.69130859375 -11.937060546875001H23.258544921875L19.171533203125 0.0ZM27.6302734375 -25.328271484375H46.328271484375L41.384716796875004 -39.797998046875Q40.984716796875006 -40.906689453125004 40.461889648437506 -42.5382080078125Q39.939062500000006 -44.1697265625 39.393408203125006 -46.0468994140625Q38.847753906250006 -47.924072265625 38.302099609375006 -49.7968994140625Q37.7564453125 -51.6697265625 37.310791015625 -53.115380859375H36.64775390625Q36.156445312500004 -51.224072265625004 35.415136718750006 -48.787109375Q34.673828125 -46.350146484375 33.928173828125 -43.9686279296875Q33.18251953125 -41.587109375000004 32.573828125 -39.797998046875ZM116.70429687500001 1.2000000000000002Q105.55214843750001 1.2000000000000002 97.830419921875 -2.6630371093750003Q90.10869140625002 -6.526074218750001 86.104345703125 -14.430419921875002Q82.10000000000001 -22.334765625000003 82.10000000000001 -34.354345703125Q82.10000000000001 -52.1826171875 91.0358642578125 -61.045654296875Q99.97172851562502 -69.90869140625 116.70429687500001 -69.90869140625Q126.01948242187501 -69.90869140625 133.195556640625 -66.7641357421875Q140.37163085937502 -63.619580078125004 144.4488037109375 -57.3619873046875Q148.5259765625 -51.10439453125 148.5259765625 -41.7783203125H130.98701171875Q130.98701171875 -46.23486328125 129.2446044921875 -49.385961914062506Q127.50219726562501 -52.537060546875004 124.32717285156252 -54.228369140625006Q121.15214843750002 -55.919677734375 116.74125976562502 -55.919677734375Q111.08251953125 -55.919677734375 107.4792236328125 -53.6229248046875Q103.87592773437501 -51.326171875 102.18786621093751 -46.995703125000006Q100.49980468750002 -42.665234375000004 100.49980468750002 -36.59560546875V-32.1130859375Q100.49980468750002 -25.997802734375 102.21503906250001 -21.667333984375Q103.9302734375 -17.336865234375 107.4835693359375 -15.062939453125Q111.036865234375 -12.789013671875 116.63256835937501 -12.789013671875Q121.397802734375 -12.789013671875 124.72717285156251 -14.4031494140625Q128.05654296875002 -16.01728515625 129.826123046875 -19.1412109375Q131.595703125 -22.26513671875 131.595703125 -26.667333984375002H148.5259765625Q148.5259765625 -17.449951171875 144.580322265625 -11.2467041015625Q140.63466796875002 -5.04345703125 133.48576660156252 -1.921728515625Q126.33686523437501 1.2000000000000002 116.70429687500001 1.2000000000000002ZM194.904296875 1.2000000000000002Q183.7521484375 1.2000000000000002 176.03041992187502 -2.6630371093750003Q168.30869140625 -6.526074218750001 164.30434570312502 -14.430419921875002Q160.3 -22.334765625000003 160.3 -34.354345703125Q160.3 -52.1826171875 169.23586425781252 -61.045654296875Q178.171728515625 -69.90869140625 194.904296875 -69.90869140625Q204.219482421875 -69.90869140625 211.395556640625 -66.7641357421875Q218.571630859375 -63.619580078125004 222.6488037109375 -57.3619873046875Q226.72597656250002 -51.10439453125 226.72597656250002 -41.7783203125H209.18701171875Q209.18701171875 -46.23486328125 207.44460449218752 -49.385961914062506Q205.70219726562502 -52.537060546875004 202.5271728515625 -54.228369140625006Q199.3521484375 -55.919677734375 194.941259765625 -55.919677734375Q189.28251953125002 -55.919677734375 185.67922363281252 -53.6229248046875Q182.075927734375 -51.326171875 180.3878662109375 -46.995703125000006Q178.6998046875 -42.665234375000004 178.6998046875 -36.59560546875V-32.1130859375Q178.6998046875 -25.997802734375 180.4150390625 -21.667333984375Q182.13027343750002 -17.336865234375 185.68356933593753 -15.062939453125Q189.23686523437502 -12.789013671875 194.83256835937502 -12.789013671875Q199.59780273437502 -12.789013671875 202.92717285156252 -14.4031494140625Q206.25654296875 -16.01728515625 208.026123046875 -19.1412109375Q209.79570312500002 -22.26513671875 209.79570312500002 -26.667333984375002H226.72597656250002Q226.72597656250002 -17.449951171875 222.78032226562502 -11.2467041015625Q218.83466796875 -5.04345703125 211.6857666015625 -1.921728515625Q204.536865234375 1.2000000000000002 194.904296875 1.2000000000000002ZM234.771728515625 0.0 260.602197265625 -68.70869140625H282.05634765625L307.932470703125 0.0H288.7783203125L284.69130859375 -11.937060546875001H257.258544921875L253.171533203125 0.0ZM261.6302734375 -25.328271484375H280.328271484375L275.384716796875 -39.797998046875Q274.984716796875 -40.906689453125004 274.4618896484375 -42.5382080078125Q273.9390625 -44.1697265625 273.393408203125 -46.0468994140625Q272.84775390625 -47.924072265625 272.302099609375 -49.7968994140625Q271.7564453125 -51.6697265625 271.310791015625 -53.115380859375H270.64775390625Q270.1564453125 -51.224072265625004 269.41513671875 -48.787109375Q268.673828125 -46.350146484375 267.928173828125 -43.9686279296875Q267.18251953125 -41.587109375000004 266.573828125 -39.797998046875ZM319.09130859375 0.0V-68.70869140625H334.96943359375L359.97612304687505 -36.7953125Q360.693505859375 -35.9779296875 361.828271484375 -34.4659912109375Q362.963037109375 -32.954052734375004 364.07932128906253 -31.4377685546875Q365.19560546875005 -29.921484375000002 365.7216796875 -28.995410156250003L366.2216796875 -29.104101562500002Q366.16733398437503 -31.264941406250003 366.16733398437503 -33.3529541015625Q366.16733398437503 -35.440966796875 366.16733398437503 -36.7953125V-68.70869140625H382.797607421875V0.0H367.019482421875L340.49980468750005 -33.572021484375Q339.210693359375 -35.206787109375 338.0791748046875 -36.902441406250006Q336.94765625 -38.598095703125004 336.167236328125 -39.732861328125004L335.667236328125 -39.624169921875Q335.72158203125 -37.998095703125 335.72158203125 -36.3491943359375Q335.72158203125 -34.70029296875 335.72158203125 -33.572021484375V0.0ZM417.971728515625 0.0V-54.03056640625H395.69130859375V-68.70869140625H458.188916015625V-54.03056640625H435.9171875V0.0ZM464.571728515625 0.0 490.40219726562503 -68.70869140625H511.85634765625L537.732470703125 0.0H518.5783203125L514.49130859375 -11.937060546875001H487.058544921875L482.97153320312503 0.0ZM491.43027343750003 -25.328271484375H510.12827148437503L505.184716796875 -39.797998046875Q504.78471679687505 -40.906689453125004 504.26188964843755 -42.5382080078125Q503.73906250000005 -44.1697265625 503.19340820312505 -46.0468994140625Q502.64775390625005 -47.924072265625 502.10209960937505 -49.7968994140625Q501.5564453125 -51.6697265625 501.110791015625 -53.115380859375H500.44775390625Q499.9564453125 -51.224072265625004 499.21513671875005 -48.787109375Q498.473828125 -46.350146484375 497.728173828125 -43.9686279296875Q496.98251953125003 -41.587109375000004 496.373828125 -39.797998046875Z" fill="#FBD24E" transform="translate(174.47,69.97)"/><rect x="174.47" y="93.30" width="538.40" height="63.11" rx="11.36" fill="#FBD24E"/><path d="M8.477932373046876 0.0V-20.0452578125H0.7424945068359375V-23.324H20.055415893554688V-20.0452578125H12.269438720703127V0.0ZM32.413932373046876 0.0V-23.324H50.47988757324219V-20.070988159179688H36.20543872070313V-13.555910400390626H48.983887573242185V-10.302898559570313H36.20543872070313V-3.253011840820313H50.68388757324219V0.0ZM74.27253930664062 0.40800000000000003Q70.70253930664062 0.40800000000000003 68.19434826660157 -0.8748089599609377Q65.6861572265625 -2.1576179199218752 64.36796618652343 -4.830752746582031Q63.04977514648437 -7.503887573242188 63.04977514648437 -11.662Q63.04977514648437 -17.77465173339844 66.01696618652343 -20.75332586669922Q68.9841572265625 -23.732000000000003 74.28907861328125 -23.732000000000003Q77.22869653320312 -23.732000000000003 79.54942687988282 -22.754269653320314Q81.8701572265625 -21.776539306640625 83.21821343994141 -19.808213439941404Q84.56626965332032 -17.839887573242187 84.56626965332032 -14.821235839843752H80.697572265625Q80.697572265625 -16.703168212890628 79.9004150390625 -17.96299957275391Q79.1032578125 -19.22283093261719 77.66653887939452 -19.863774719238283Q76.22981994628906 -20.504718505859376 74.324 -20.504718505859376Q71.93757312011718 -20.504718505859376 70.28352832031248 -19.574774719238285Q68.6294835205078 -18.64483093261719 67.79924768066405 -16.761055786132815Q66.96901184082031 -14.877280639648438 66.96901184082031 -11.986382080078126V-11.246651733398439Q66.96901184082031 -8.371371093750001 67.79924768066405 -6.5041352539062505Q68.6294835205078 -4.6368994140625 70.27066314697265 -3.7280904541015625Q71.9118427734375 -2.819281494140625 74.33226965332031 -2.819281494140625Q76.30701098632812 -2.819281494140625 77.76946026611327 -3.4473601074218747Q79.23190954589843 -4.075438720703125 80.0332015991211 -5.335270080566406Q80.83449365234375 -6.595101440429688 80.83449365234375 -8.477033813476563H84.56626965332032Q84.56626965332032 -5.4418427734375 83.21453930664063 -3.4735169067382814Q81.86280895996094 -1.5051910400390627 79.5379437866211 -0.5485955200195314Q77.21307861328125 0.40800000000000003 74.27253930664062 0.40800000000000003Z" fill="#0B3FA8" transform="translate(406.67,134.88) scale(0.86)"/></g></svg></a>
+    <nav>
+      <a href="#como">Como funciona</a>
+      <a href="#confere">Comprei bem?</a>
+      <a href="#seguro">Segurança</a>
+      <a href="#preco">Quanto custa</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-amber cta-top" href="#conversa">Começar grátis</a>
+  </div>
+</div>
+
+<header class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow a">Accanta Tec · Compras</span>
+      <h1>Quantos dias da sua semana <span class="u">a cotação leva?</span></h1>
+      <p class="ed">Você já faz cotação hoje. Manda a planilha, espera cada fornecedor responder, junta tudo, compara, refaz a conta. A Accanta faz essa parte por você — e devolve a compra pronta para você conferir e fechar.</p>
+      <p class="pill-offer"><i aria-hidden="true"></i> 30 dias grátis · depois R$ 129 por mês</p>
+      <div class="hero-actions">
+        <a class="btn btn-ink btn-lg" href="#conversa">Ver se serve para minha farmácia</a>
+        <a class="btn btn-out btn-lg" href="/demonstracao.html">Ver uma compra inteira</a>
+      </div>
+      <p class="hero-note">Sem trocar o seu sistema · sem cadastrar fornecedor<br>sem aprender programa novo · sem cartão para testar</p>
+    </div>
+
+    <div class="calc" id="calc">
+      <span class="calc-lab">Faça a conta</span>
+      <h3>Quanto tempo a sua compra come hoje?</h3>
+      <div class="row">
+        <span class="lb" id="l1">Dias por semana que você mexe com cotação</span>
+        <div class="chips" role="group" aria-labelledby="l1">
+          <button class="chip" data-g="dias" data-v="1" aria-pressed="false">1</button>
+          <button class="chip" data-g="dias" data-v="2" aria-pressed="true">2</button>
+          <button class="chip" data-g="dias" data-v="3" aria-pressed="false">3</button>
+          <button class="chip" data-g="dias" data-v="4" aria-pressed="false">4</button>
+          <button class="chip" data-g="dias" data-v="5" aria-pressed="false">5</button>
+        </div>
+      </div>
+      <div class="row">
+        <span class="lb" id="l2">Horas em cada um desses dias</span>
+        <div class="chips" role="group" aria-labelledby="l2">
+          <button class="chip" data-g="horas" data-v="1" aria-pressed="false">1h</button>
+          <button class="chip" data-g="horas" data-v="2" aria-pressed="true">2h</button>
+          <button class="chip" data-g="horas" data-v="3" aria-pressed="false">3h</button>
+          <button class="chip" data-g="horas" data-v="4" aria-pressed="false">4h</button>
+          <button class="chip" data-g="horas" data-v="6" aria-pressed="false">6h+</button>
+        </div>
+      </div>
+      <div class="calc-out">
+        <div class="big" id="out">184<small>horas por ano</small></div>
+        <p id="outTxt"></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section style="padding-top:clamp(18px,3vw,36px)">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Você se reconhece?</span>
+      <h2>Sete frases que a gente ouve toda semana.</h2>
+    </div>
+    <div class="asks rv">
+      <div class="ask">
+        <q>“Cotação eu já faço. O problema é o tempo que some.”</q>
+        <p>Some mesmo. E o pior nem é montar: é juntar respostas que chegam cada uma de um jeito, conferir se o fornecedor mandou o item certo e refazer a conta toda quando um preço muda.</p>
+      </div>
+      <div class="ask">
+        <q>“Esse tempo podia ir para o que é meu de verdade.”</q>
+        <p>Margem, mix, vitrine, equipe, cliente no balcão. Nada disso dá para terceirizar. Montar planilha dá.</p>
+      </div>
+      <div class="ask">
+        <q>“Sistema bom é caro. Isso é coisa de rede grande.”</q>
+        <p>Era. A assinatura é fixa por CNPJ: a mesma estrutura de compra organizada, automática e registrada que uma rede tem, por um custo que uma farmácia paga.</p>
+      </div>
+      <div class="ask">
+        <q>“Recebo fornecedor a semana inteira e nem sei quanto rende.”</q>
+        <p>O representante traz a oferta dele, e muita coisa boa vem por aí. O que falta é a hora de colocar todas lado a lado, com o seu estoque e o seu giro na frente, para saber qual valia mesmo a pena.</p>
+      </div>
+      <div class="ask">
+        <q>“Se me perguntarem por que comprei desse, eu explico. Provar é outra história.”</q>
+        <p>Quem faz a compra devia poder mostrar a conta, não defender a memória. Na Accanta cada item fica com quem ganhou, por quanto e por quê — a decisão registrada no dia em que foi tomada.</p>
+      </div>
+      <div class="ask">
+        <q>“Já mandei pedido errado por causa de uma fórmula.”</q>
+        <p>Todo mundo já. A fórmula que não foi arrastada até a última linha, a coluna colada uma linha fora, o desconto que ficou num e-mail de fevereiro. Ninguém confere três mil linhas — e o erro só aparece quando o produto chega na prateleira.</p>
+      </div>
+      <div class="ask">
+        <q>“Faz dois anos que eu não tiro férias direito por causa da compra.”</q>
+        <p>Não é questão de confiança: é que o processo inteiro mora na cabeça de uma pessoa. Quando ele fica no sistema — com histórico de preço, fornecedor e decisão — quem assumir amanhã abre e continua de onde parou.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como" class="dark">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Seis passos. Você entra em dois.</h2>
+      <p class="ed">Os outros quatro a Accanta faz sozinha, do jeito que você configurou. Veja o que acontece em cada um.</p>
+    </div>
+    <div class="steps rv">
+
+      <div class="st me">
+        <span class="n">VOCÊ</span>
+        <h3>Manda o que precisa comprar</h3>
+        <p>Do seu mix de vinte mil itens, só a fatia que precisa de decisão nesta semana. Exporta do seu sistema o que você já tem — produto, estoque e giro — sobe o arquivo e acabou a sua parte. A Accanta confere linha por linha na hora — código de barras inválido, produto repetido, campo em branco — e mostra o que está errado antes de deixar seguir. Se hoje você trabalha com uma planilha sua, ela também serve.</p>
+      </div>
+
+      <div class="st">
+        <span class="n">ACCANTA</span>
+        <h3>Calcula quanto comprar de cada item</h3>
+        <p>Não é lista de reposição: é conta. Ela olha o giro dos últimos meses, o que ainda tem em estoque, o prazo de entrega de cada fornecedor e quantos dias de cobertura você quer trabalhar. Separa curva A, B e C para você saber onde está o dinheiro. Aí você abre a lista, muda o que quiser e libera. É a diferença entre comprar o que faltou na prateleira e comprar o que vende.</p>
+      </div>
+
+      <div class="st">
+        <span class="n">ACCANTA</span>
+        <h3>Envia para os seus fornecedores</h3>
+        <p>Cada um recebe a mesma planilha, no mesmo formato, por e-mail ou WhatsApp — do jeito que você já manda hoje. Ninguém cria conta, ninguém instala nada, ninguém paga para participar. Continuam sendo os seus fornecedores, com a sua negociação de sempre.</p>
+      </div>
+
+      <div class="st">
+        <span class="n">ACCANTA</span>
+        <h3>Recebe as respostas e junta tudo</h3>
+        <p>Voltou planilha? Ela lê sozinha, confere se veio do fornecedor certo, identifica cada item e organiza. Aquele trabalho de abrir seis arquivos, copiar coluna e torcer para não errar a linha simplesmente deixa de existir. Se um fornecedor mandar algo fora do padrão, você é avisado — não descobre depois, no pedido.</p>
+      </div>
+
+      <div class="st me">
+        <span class="n">VOCÊ</span>
+        <h3>Confere a compra pronta e fecha</h3>
+        <p>Abre e vê item a item: quem ganhou, por quanto e por quê. Pedido mínimo, condição especial e verba negociada já estão dentro da conta, e onde isso mudou o vencedor aparece marcado. Você ajusta a linha que quiser, tira um fornecedor, muda uma quantidade — e fecha. Sai um pedido por fornecedor, pronto para lançar no seu sistema.</p>
+      </div>
+
+      <div class="st">
+        <span class="n">ACCANTA</span>
+        <h3>Guarda a memória da sua compra</h3>
+        <p>Cada cotação, cada proposta e cada pedido ficam registrados, com data e autor, e nada se apaga. Na compra seguinte você não começa do zero: já sabe quanto cada fornecedor cobrou da última vez, quem costuma ganhar em quê e onde o preço subiu. É o histórico que hoje mora na cabeça de alguém.</p>
+      </div>
+
+    </div>
+
+    <div class="regua rv">
+      <h3>Em cada um desses seis passos, a régua é sua</h3>
+      <ul>
+        <li><b>Você define os parâmetros:</b> período do giro, onde cortar a curva, dias de cobertura, lead time, estoque de segurança. O padrão é sugestão, não regra.</li>
+        <li><b>Você revisa antes de sair:</b> a quantidade de cada linha é editável, e item com demanda de uma unidade vai para a cotação assim mesmo — cortar em silêncio seria decidir por você.</li>
+        <li><b>Você escolhe os fornecedores</b> e de quais deles a verba entra na conta. A Accanta não indica nem prioriza ninguém.</li>
+        <li><b>Você fecha.</b> Nada é emitido sem o seu comando, e cada vencedor vem com o motivo ao lado — para conferir, não para confiar.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="confere">
+  <div class="wrap">
+    <div class="head-2 rv">
+      <div>
+        <span class="eyebrow">Comprei bem?</span>
+        <h2>A conta completa, não a que dá para fazer com pressa.</h2>
+      </div>
+      <div>
+        <p class="ed">O menor preço da tela nem sempre é o menor custo na sua gaveta. A Accanta coloca dentro da comparação tudo que muda o resultado — e <b>mostra o motivo ao lado do vencedor</b>, para você conferir a decisão em vez de confiar nela.</p>
+        <ul class="factors">
+          <li>Pedido mínimo do fornecedor</li>
+          <li>Condição especial combinada</li>
+          <li>Verba negociada</li>
+          <li>Quantidade que o fornecedor tem para entregar</li>
+        </ul>
+        <p class="ed" style="margin-top:22px;font-size:16px">E cada decisão fica registrada no dia em que foi tomada — <b>quem compra consegue mostrar a conta</b>, não só lembrar dela.</p>
+        <ul style="display:none">
+        </ul>
+      </div>
+    </div>
+    <div class="field-box rv">
+      <div class="fb-bar">
+        <span class="fb-lab">Ensaio sobre a base real de uma rede · 3.166 itens de uma semana</span>
+        <label class="sw"><input type="checkbox" id="tgl"><span class="tr" aria-hidden="true"></span><span>Conta completa</span></label>
+        <span class="fb-count" id="count" aria-live="polite"><b>0</b> de 3.166</span>
+      </div>
+      <div class="fw"><canvas id="field" role="img" aria-label="Campo com 3.166 itens de uma cotação. Com a conta completa, 875 deles mudam de fornecedor."></canvas></div>
+      <p class="fb-say" id="say">Cada quadrado é um item. Assim, decidido só pelo preço que aparece na planilha, é a conta rápida — a que dá tempo de fazer numa manhã.</p>
+    </div>
+
+    <a class="verdemo rv" href="/demonstracao.html" style="text-decoration:none">
+      <div>
+        <b>Veja a compra inteira acontecendo</b>
+        <p>As seis fases com as telas, os parâmetros que você define e o mapa da compra mudando de lugar quando os contratos entram na conta.</p>
+      </div>
+      <span class="btn btn-ink">Ver a demonstração</span>
+    </a>
+  </div>
+</section>
+
+<section id="seguro" class="dark" style="background:var(--ink-2)">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Segurança</span>
+      <h2>O que você paga nos seus produtos é assunto seu.</h2>
+      <p class="ed">É o dado mais sensível de uma farmácia. Por isso ele não circula.</p>
+    </div>
+    <div class="safe rv">
+      <div><h3>Sua farmácia é uma ilha</h3><p>Nenhuma outra enxerga o seu preço, o seu fornecedor ou a sua compra. A separação é feita dentro do banco de dados e testada a cada nova versão.</p></div>
+      <div><h3>Fornecedor não vê fornecedor</h3><p>Cada um recebe só a planilha dele e nunca vê a proposta do concorrente. Você continua sendo o único que enxerga a mesa inteira.</p></div>
+      <div><h3>Nada se apaga</h3><p>Cotação, proposta e pedido não somem — nem por engano, nem de propósito. Cancela-se com motivo registrado. Se der discussão depois, o histórico está lá.</p></div>
+      <div><h3>Fica registrado quem fez o quê</h3><p>Cada ação guarda autor, data e hora. Se mais de uma pessoa mexe na compra, cada uma responde pelo que fez — e ninguém responde pelo que não fez.</p></div>
+      <div><h3>A compra não para se alguém faltar</h3><p>Férias, licença ou saída não travam o ciclo. O histórico de preço, de fornecedor e de decisão fica no sistema, não na memória de uma pessoa.</p></div>
+      <div><h3>Dados no Brasil</h3><p>Servidor em São Paulo e arquivos guardados com verificação de integridade. Nada sai do país.</p></div>
+      <div><h3>Seus fornecedores continuam seus</h3><p>Ninguém paga para participar, ninguém é intermediado e a Accanta não entra na sua negociação. O relacionamento é seu.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="preco">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="eyebrow">Quanto custa</span>
+      <h2>R$ 129 por mês. E o primeiro é por nossa conta.</h2>
+      <p class="ed">Uma farmácia, uma assinatura. <b>Valor fixo, publicado aqui</b>, que não muda conforme você compra mais e não vira "solicite uma proposta". Sem taxa por cotação, sem cobrança por item e sem contar quantos fornecedores você usa.</p>
+    </div>
+    <div class="price rv">
+      <div class="offer">
+        <span class="price-unit">oferta de entrada</span>
+        <div class="offer-big"><b>30</b><span>dias<br>grátis</span></div>
+        <div class="then"><span class="then-lab">a partir do 2º mês</span><span class="then-val">R$&nbsp;129<i>/mês por CNPJ</i></span></div>
+        <p>Sem cartão para começar e sem fidelidade. A gente só considera o teste cumprido quando você fechar uma cotação inteira dentro dele — se o mês acabar antes, a gente estende.</p>
+      </div>
+      <div>
+        <ul class="incl">
+          <li>Primeiros 30 dias sem pagar nada</li>
+          <li>Usuários ilimitados</li>
+          <li>Cotações e pedidos sem limite</li>
+          <li>Fornecedores sem limite</li>
+          <li>Cadastro inicial montado por nós</li>
+          <li>Atualizações incluídas</li>
+          <li>Atendimento 24 horas, todos os dias</li>
+          <li class="out">Sem taxa de implantação</li>
+          <li class="out">Sem fidelidade longa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="conversa" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv" style="max-width:52ch">
+      <span class="eyebrow">Começar</span>
+      <h2>Sem formulário. Três perguntas.</h2>
+      <p class="ed">Responde três coisas e a gente te diz, na hora, se a Accanta faz sentido para a sua farmácia — inclusive se não fizer. Fazendo sentido, <b>os 30 dias começam no mesmo dia</b>.</p>
+    </div>
+
+    <div class="recep rv" id="recep">
+      <div class="q-prog" aria-hidden="true"><i id="p1"></i><i id="p2"></i><i id="p3"></i></div>
+
+      <div class="q-step on" data-step="1">
+        <span class="q-lab">Pergunta 1 de 3</span>
+        <p class="q-ask">Como é a sua farmácia hoje?</p>
+        <div class="opts">
+          <button class="opt" data-k="perfil" data-v="ind">Independente, uma loja</button>
+          <button class="opt" data-k="perfil" data-v="assoc">Associada a uma rede</button>
+          <button class="opt" data-k="perfil" data-v="rede">Pequena rede, de 2 a 10 lojas</button>
+          <button class="opt" data-k="perfil" data-v="mais">Mais de 10 lojas</button>
+        </div>
+      </div>
+
+      <div class="q-step" data-step="2">
+        <span class="q-lab">Pergunta 2 de 3</span>
+        <p class="q-ask">Como você compra hoje?</p>
+        <div class="opts">
+          <button class="opt" data-k="hoje" data-v="planilha">Planilha por e-mail e WhatsApp</button>
+          <button class="opt" data-k="hoje" data-v="portal">Já uso um portal de cotação</button>
+          <button class="opt" data-k="hoje" data-v="rep">Direto com os representantes</button>
+          <button class="opt" data-k="hoje" data-v="misto">Um pouco de cada</button>
+        </div>
+        <button class="q-back" data-back="1">← voltar</button>
+      </div>
+
+      <div class="q-step" data-step="3">
+        <span class="q-lab">Pergunta 3 de 3</span>
+        <p class="q-ask">O que mais te incomoda na compra?</p>
+        <div class="opts">
+          <button class="opt" data-k="dor" data-v="tempo">O tempo que ela toma</button>
+          <button class="opt" data-k="dor" data-v="duvida">Não saber se comprei bem</button>
+          <button class="opt" data-k="dor" data-v="estoque">Comprar demais ou faltar produto</button>
+          <button class="opt" data-k="dor" data-v="controle">Não ter histórico de nada</button>
+        </div>
+        <button class="q-back" data-back="2">← voltar</button>
+      </div>
+
+      <div class="q-step" data-step="4" id="qOut">
+        <span class="q-lab">O que eu te diria</span>
+        <p class="q-ask" id="qTitle"></p>
+        <p id="qBody"></p>
+        <div class="q-actions">
+          <a class="btn btn-ink btn-lg" id="qWa" href="#">Falar no WhatsApp</a>
+          <a class="btn btn-out btn-lg" id="qMail" href="#">Prefiro e-mail</a>
+        </div>
+        <button class="q-back" data-back="1">← responder de novo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas" style="padding-top:0">
+  <div class="wrap" style="max-width:920px">
+    <div class="head rv" style="max-width:none">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>O que todo mundo pergunta.</h2>
+    </div>
+    <div class="rv">
+      <details><summary>Preciso trocar o sistema da minha farmácia?</summary><p>Não. A Accanta usa o arquivo que o seu sistema já exporta e devolve o pedido pronto para lançar. Ela trabalha antes do seu sistema, só na hora de comprar.</p></details>
+      <details><summary>Meus fornecedores precisam se cadastrar?</summary><p>Não. Cada um recebe a mesma planilha, preenche e devolve — como já fazem hoje. Sem conta, sem senha, sem ferramenta nova para aprender.</p></details>
+      <details><summary>Sou de uma rede associativa. Funciona?</summary><p>Sim, e é onde rende mais. As condições que a central negociou entram na comparação junto com os preços do dia, e no fim do período você vê quanto renderam de verdade — não só o que estava combinado.</p></details>
+      <details><summary>E se eu não tiver ninguém dedicado a compras?</summary><p>É o caso mais comum. A Accanta foi feita para quem compra entre uma coisa e outra: ela monta, calcula e organiza, e devolve pronto para conferir em minutos.</p></details>
+      <details><summary>Quanto custa?</summary><p>R$ 129 por mês, por CNPJ, a partir do segundo mês — o primeiro é o teste grátis. Nesse valor entram usuários, cotações, pedidos e fornecedores sem limite, o cadastro inicial montado por nós, as atualizações e o atendimento 24 horas. Não há taxa de implantação nem cobrança por item cotado.</p></details>
+      <details><summary>Como funciona o teste de 30 dias?</summary><p>Você usa a Accanta inteira, sem pagar nada, por trinta dias. O cadastro inicial é montado por nós e o acompanhamento vai até você fechar a primeira cotação de verdade — que é quando dá para julgar se vale. Se o mês acabar antes disso, a gente estende. Tudo que você fez no teste continua lá quando virar assinatura.</p></details>
+      <details><summary>Meus preços de compra ficam visíveis para alguém?</summary><p>Não. Cada farmácia é isolada no próprio banco de dados, e isso é testado a cada nova versão. Nenhum fornecedor vê a proposta do outro.</p></details>
+      <details><summary>Quem está por trás da Accanta Tec?</summary><p>Uma operação de representação comercial farmacêutica com mais de trinta anos em Minas Gerais, que atende indústrias, distribuidores e redes. O sistema nasceu do processo real de compra de uma rede e foi simplificado para caber na rotina de uma farmácia.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="close dark">
+  <div class="wrap rv">
+    <span class="eyebrow">Accanta Tec</span>
+    <h2 style="margin-top:16px">Você cuida da farmácia.<br>A gente te ajuda a cuidar <span class="u">muito bem</span> das compras.</h2>
+    <p class="ed" style="margin-top:20px;max-width:50ch">Tecnologia não é para substituir o seu jeito de comprar. É para tirar da sua semana a parte que não precisa de você.</p>
+    <div class="hero-actions"><a class="btn btn-amber btn-lg" href="#conversa">Começar 30 dias grátis</a></div>
+    <p class="tagline-line">Tecnologia ao seu lado</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="marca" href="#topo" style="height:42px" aria-label="Accanta Tec"><svg xmlns="http://www.w3.org/2000/svg" class="logo" viewBox="0 0 770.49 215.40" role="img" aria-label="Accanta Tec"><title>Accanta Tec</title><g transform="translate(28.81,28.81)"><g fill="#FBD24E" stroke="#FBD24E" transform="translate(0.00,0.00) scale(0.7560)"><g transform="translate(-20.00,-14.00)"><path fill-rule="evenodd" d="M107.35,163.97 C107.97,163.41 107.88,163.43 109.68,163.42 C111.01,163.41 111.01,163.41 111.55,162.93 C111.91,162.60 112.26,162.42 112.65,162.36 C113.02,162.29 113.39,162.11 113.71,161.83 C114.01,161.55 114.38,161.37 114.76,161.31 C115.23,161.22 115.49,161.04 116.32,160.25 C117.15,159.44 117.40,159.28 117.89,159.20 C118.80,159.05 127.29,150.57 127.42,149.67 C127.49,149.20 127.66,148.95 128.47,148.09 C129.25,147.27 129.46,146.97 129.54,146.53 C129.59,146.19 129.80,145.76 130.06,145.45 C130.32,145.15 130.54,144.71 130.59,144.40 C130.64,144.08 130.86,143.64 131.12,143.35 C131.39,143.02 131.59,142.60 131.65,142.26 C131.73,141.81 131.89,141.54 132.49,140.94 C133.46,139.97 133.89,139.93 134.80,140.72 C135.17,141.02 135.55,141.24 135.74,141.24 C136.15,141.24 136.54,141.43 137.01,141.87 C137.34,142.18 137.54,142.23 138.48,142.29 C139.52,142.37 139.61,142.40 140.12,142.85 C140.66,143.35 140.66,143.35 146.43,143.35 C152.21,143.35 152.21,143.35 152.52,143.01 C153.03,142.45 153.47,142.29 154.44,142.29 C155.28,142.29 155.37,142.26 155.82,141.83 C156.11,141.56 156.49,141.35 156.80,141.29 C157.43,141.18 157.97,140.91 158.07,140.65 C158.11,140.55 158.40,140.39 158.71,140.31 C159.67,140.04 160.01,139.89 160.14,139.64 C160.21,139.52 160.52,139.34 160.82,139.25 C161.78,138.99 162.12,138.84 162.24,138.60 C162.36,138.38 162.76,138.21 163.59,138.02 C164.08,137.92 170.48,131.53 170.59,131.04 C170.63,130.86 170.69,130.56 170.73,130.37 C170.77,130.17 171.39,129.44 172.24,128.60 C173.08,127.77 173.71,127.04 173.75,126.84 C173.78,126.65 173.84,126.36 173.88,126.18 C173.92,125.99 174.13,125.66 174.34,125.45 C174.56,125.23 174.77,124.88 174.81,124.68 C174.85,124.49 174.92,124.20 174.95,124.03 C174.98,123.87 175.18,123.56 175.39,123.34 C175.61,123.13 175.82,122.80 175.85,122.61 C175.89,122.43 175.95,122.14 175.99,121.96 C176.03,121.77 176.24,121.43 176.45,121.21 C176.67,120.98 176.88,120.64 176.92,120.45 C176.96,120.27 177.02,119.98 177.05,119.82 C177.08,119.65 177.32,119.29 177.57,119.01 C178.00,118.55 178.02,118.45 178.02,117.63 C178.02,116.67 178.13,116.41 178.71,115.74 C179.03,115.36 179.07,115.20 179.07,114.44 C179.07,113.52 179.18,113.24 179.76,112.58 C180.13,112.15 180.13,112.15 180.13,103.80 C180.13,95.45 180.13,95.45 179.76,95.02 C179.15,94.32 179.07,94.09 179.07,92.63 C179.07,91.29 179.06,91.23 178.71,90.81 C178.13,90.15 178.02,89.87 178.02,88.95 C178.02,88.19 177.98,88.03 177.65,87.65 C177.16,87.08 176.97,86.73 176.97,86.32 C176.97,86.14 176.80,85.79 176.60,85.55 C176.11,84.98 175.92,84.62 175.92,84.21 C175.92,84.03 175.75,83.68 175.55,83.44 C175.05,82.87 174.86,82.52 174.86,82.08 C174.86,81.83 174.62,81.47 173.97,80.80 C172.96,79.75 172.76,79.44 172.76,78.92 C172.76,78.63 172.37,78.16 170.80,76.58 C168.76,74.51 168.55,74.24 168.55,73.67 C168.55,73.23 168.01,72.68 167.56,72.68 C166.99,72.68 166.74,72.47 164.14,69.91 C162.11,67.88 161.56,67.42 161.26,67.42 C160.83,67.42 160.47,67.24 159.89,66.75 C159.66,66.54 159.32,66.37 159.13,66.37 C158.63,66.37 158.32,66.16 157.28,65.17 C156.60,64.51 156.25,64.26 155.99,64.26 C155.57,64.26 155.21,64.08 154.63,63.59 C154.40,63.38 154.05,63.21 153.86,63.21 C153.46,63.21 153.09,63.02 152.53,62.54 C152.29,62.33 151.95,62.16 151.76,62.16 C151.36,62.16 150.99,61.97 150.42,61.48 C150.04,61.15 149.88,61.11 149.13,61.11 C148.20,61.11 147.93,61.01 147.26,60.43 C146.85,60.06 146.78,60.05 145.44,60.05 C143.99,60.05 143.73,59.98 143.12,59.41 C142.76,59.07 142.69,59.06 140.60,59.00 C138.46,58.94 138.46,58.94 137.92,58.44 C137.37,57.95 137.37,57.95 131.13,57.95 C124.87,57.95 124.87,57.95 124.44,58.33 C123.67,58.99 123.62,59.00 120.47,59.00 C117.51,59.00 117.51,59.00 117.07,59.38 C116.34,60.02 116.18,60.05 114.09,60.05 C112.13,60.05 112.13,60.05 111.75,60.42 C111.04,61.14 111.55,61.11 100.00,61.11 C88.47,61.11 89.00,61.14 88.19,60.43 C87.76,60.05 87.76,60.05 85.84,60.05 C83.82,60.05 83.66,60.01 82.93,59.38 C82.49,59.00 82.49,59.00 79.53,59.00 C76.38,59.00 76.33,58.99 75.56,58.33 C74.87,57.74 63.94,57.74 63.26,58.33 C62.51,58.98 62.40,59.00 59.82,59.00 C57.38,59.00 57.38,59.00 56.95,59.38 C56.24,59.99 56.01,60.05 54.56,60.05 C53.22,60.05 53.15,60.06 52.74,60.43 C52.07,61.01 51.80,61.11 50.87,61.11 C50.12,61.11 49.96,61.15 49.58,61.48 C49.01,61.97 48.64,62.16 48.24,62.16 C48.05,62.16 47.71,62.33 47.47,62.54 C46.91,63.02 46.54,63.21 46.14,63.21 C45.96,63.21 45.57,63.42 45.26,63.67 C44.96,63.93 44.58,64.16 44.43,64.19 C44.27,64.22 43.98,64.28 43.78,64.33 C43.57,64.37 43.09,64.74 42.66,65.20 C41.84,66.06 41.37,66.37 40.87,66.37 C40.69,66.37 40.31,66.58 40.00,66.83 C39.69,67.08 39.31,67.32 39.13,67.36 C38.96,67.39 38.67,67.45 38.51,67.48 C38.08,67.57 27.39,78.27 27.31,78.68 C27.26,78.86 27.20,79.16 27.16,79.35 C27.12,79.57 26.51,80.29 25.58,81.22 C24.07,82.73 24.07,82.73 24.08,83.63 C24.08,84.60 23.98,84.88 23.42,85.53 C23.22,85.76 23.03,86.18 22.98,86.48 C22.93,86.84 22.74,87.21 22.43,87.54 C22.00,88.01 21.98,88.11 21.98,88.93 C21.98,89.87 21.87,90.15 21.29,90.81 C20.94,91.23 20.93,91.29 20.93,92.63 C20.93,94.09 20.85,94.32 20.24,95.02 C19.67,95.67 19.64,112.03 20.21,112.56 C20.76,113.07 20.93,113.52 20.93,114.51 C20.93,115.32 20.96,115.45 21.25,115.73 C21.81,116.24 21.98,116.68 21.98,117.66 C21.98,118.52 22.00,118.60 22.43,119.05 C22.69,119.34 22.92,119.74 22.97,120.02 C23.08,120.64 23.36,121.18 23.60,121.27 C23.78,121.35 23.96,121.78 24.14,122.58 C24.18,122.77 24.39,123.13 24.61,123.37 C24.82,123.60 25.03,124.00 25.08,124.26 C25.19,124.85 25.42,125.32 25.77,125.63 C25.93,125.77 26.08,126.09 26.14,126.36 C26.26,127.05 26.40,127.26 27.33,128.20 C27.79,128.66 28.19,129.18 28.23,129.35 C28.26,129.52 28.33,129.82 28.37,130.01 C28.44,130.39 35.46,137.57 36.05,137.87 C36.23,137.97 36.60,138.08 36.85,138.13 C37.12,138.18 37.44,138.34 37.58,138.49 C37.89,138.84 38.37,139.07 38.96,139.18 C39.22,139.23 39.55,139.39 39.68,139.55 C40.00,139.89 40.46,140.13 41.05,140.23 C41.31,140.27 41.75,140.53 42.03,140.78 C42.55,141.24 42.55,141.24 43.98,141.24 C45.65,141.24 45.69,141.25 46.87,142.44 C47.76,143.35 47.76,143.35 53.55,143.35 C59.34,143.35 59.34,143.35 59.88,142.85 C60.39,142.40 60.48,142.37 61.52,142.29 C62.54,142.23 62.65,142.19 63.05,141.80 C63.36,141.51 63.69,141.34 64.12,141.25 C64.54,141.18 64.91,140.99 65.26,140.66 C66.15,139.86 66.51,139.95 67.93,141.34 C69.37,142.75 69.39,142.79 69.40,143.95 C69.41,144.83 69.43,144.92 69.88,145.41 C70.21,145.77 70.40,146.13 70.46,146.52 C70.54,147.00 70.72,147.26 71.51,148.08 C72.32,148.91 72.48,149.16 72.57,149.66 C72.65,150.18 72.83,150.42 74.15,151.77 C75.46,153.11 75.63,153.34 75.73,153.87 C75.86,154.73 77.04,155.91 77.89,156.04 C78.44,156.13 78.65,156.31 80.53,158.15 C82.37,159.97 82.62,160.17 83.14,160.25 C83.52,160.32 83.88,160.49 84.19,160.78 C84.51,161.05 84.87,161.24 85.24,161.31 C85.62,161.36 85.99,161.55 86.29,161.83 C86.61,162.11 86.98,162.29 87.35,162.36 C87.74,162.42 88.09,162.60 88.45,162.93 C88.99,163.41 88.99,163.41 90.32,163.42 C92.11,163.43 92.04,163.41 92.60,163.92 C93.31,164.55 92.87,164.52 100.15,164.48 C106.80,164.46 106.80,164.46 107.35,163.97 Z M53.66,133.38 C53.12,132.88 53.12,132.88 51.52,132.82 C49.92,132.75 49.92,132.75 49.35,132.25 C48.79,131.79 48.73,131.77 47.81,131.77 C46.95,131.77 46.81,131.73 46.42,131.39 C45.85,130.89 45.48,130.72 45.08,130.72 C44.89,130.72 44.55,130.54 44.32,130.34 C43.74,129.83 43.38,129.66 42.94,129.66 C42.52,129.66 35.83,123.12 35.72,122.59 C35.68,122.42 35.62,122.14 35.59,121.95 C35.55,121.76 35.07,121.14 34.54,120.57 C33.56,119.55 33.56,119.55 33.56,118.58 C33.56,117.64 33.54,117.59 33.03,116.98 C32.73,116.61 32.51,116.20 32.51,116.02 C32.51,115.61 32.31,115.22 31.86,114.75 C31.54,114.40 31.51,114.28 31.45,112.76 C31.38,111.15 31.38,111.15 30.88,110.60 C30.40,110.05 30.40,110.05 30.40,106.56 C30.40,102.94 30.35,102.61 29.81,102.17 C29.49,101.91 29.56,101.52 30.00,101.02 C30.27,100.71 30.40,100.43 30.40,100.12 C30.40,99.80 30.27,99.53 30.00,99.22 C29.56,98.72 29.49,98.33 29.81,98.07 C30.11,97.82 30.40,97.22 30.40,96.84 C30.40,96.65 30.61,96.26 30.93,95.91 C31.45,95.29 31.45,95.29 31.45,93.80 C31.45,92.29 31.45,92.29 31.91,91.78 C32.22,91.43 32.41,91.06 32.48,90.65 C32.56,90.24 32.74,89.88 33.01,89.61 C33.28,89.33 33.45,88.98 33.54,88.56 C33.61,88.14 33.79,87.79 34.06,87.51 C34.34,87.22 34.51,86.87 34.59,86.44 C34.69,85.91 34.84,85.67 35.64,84.87 C36.44,84.06 36.59,83.84 36.69,83.29 C36.87,82.33 38.96,80.24 39.92,80.06 C40.52,79.96 40.69,79.81 42.55,77.97 C44.39,76.14 44.59,75.98 45.20,75.84 C45.75,75.73 46.00,75.55 46.78,74.79 C47.55,74.03 47.81,73.85 48.36,73.74 C48.76,73.64 49.17,73.44 49.41,73.21 C49.65,72.98 50.05,72.77 50.45,72.68 C50.86,72.59 51.28,72.38 51.60,72.08 C52.08,71.65 52.16,71.63 53.08,71.63 C54.04,71.63 54.08,71.62 54.67,71.11 C55.26,70.59 55.31,70.58 56.25,70.58 C57.19,70.58 57.24,70.57 57.83,70.05 C58.44,69.53 58.44,69.53 59.94,69.53 C61.43,69.53 61.43,69.53 62.04,69.00 C62.65,68.47 62.65,68.47 69.41,68.47 C76.17,68.47 76.17,68.47 76.78,69.00 C77.39,69.53 77.39,69.53 79.41,69.53 C81.43,69.53 81.43,69.53 82.04,70.05 C82.63,70.57 82.67,70.58 83.63,70.58 C84.79,70.58 85.26,70.88 85.26,71.65 C85.26,72.22 83.79,73.74 83.24,73.74 C82.60,73.74 82.22,74.06 78.47,77.84 C74.96,81.38 74.77,81.60 74.68,82.16 C74.61,82.65 74.45,82.89 73.63,83.74 C72.82,84.57 72.66,84.81 72.58,85.31 C72.52,85.69 72.35,86.05 72.05,86.37 C71.77,86.68 71.59,87.04 71.53,87.42 C71.46,87.80 71.28,88.16 71.00,88.47 C70.71,88.81 70.54,89.15 70.47,89.56 C70.41,89.95 70.26,90.25 70.04,90.46 C69.55,90.93 69.32,91.56 69.41,92.20 C69.53,92.97 69.36,93.31 68.37,94.27 C67.42,95.20 67.17,95.72 67.29,96.47 C67.40,97.07 67.22,97.58 66.78,97.97 C66.31,98.38 66.14,99.02 66.23,100.06 C66.34,101.21 66.24,101.65 65.76,102.18 C65.16,102.85 65.13,103.06 65.14,105.89 C65.15,107.35 65.15,108.67 65.15,108.83 C65.14,109.00 64.91,109.38 64.64,109.67 C64.15,110.22 64.15,110.22 64.12,119.44 C64.11,124.52 64.08,128.78 64.08,128.91 C64.07,129.41 62.80,130.55 62.07,130.71 C61.63,130.80 61.24,131.00 60.91,131.31 C60.42,131.75 60.35,131.77 59.41,131.77 C58.46,131.77 58.40,131.79 57.92,132.22 C57.60,132.51 57.18,132.73 56.78,132.82 C56.37,132.91 55.96,133.13 55.63,133.41 C54.94,134.04 54.40,134.03 53.66,133.38 Z M144.27,133.35 C143.68,132.83 143.64,132.82 142.69,132.82 C141.76,132.82 141.68,132.79 141.21,132.36 C140.88,132.07 140.47,131.85 140.05,131.76 C139.66,131.67 139.25,131.46 139.01,131.24 C138.77,131.00 138.37,130.80 137.96,130.72 C137.23,130.55 136.28,129.76 135.99,129.06 C135.85,128.76 135.81,126.68 135.82,119.43 C135.82,110.18 135.82,110.18 135.35,109.65 C134.79,109.04 134.83,109.29 134.81,106.27 C134.79,103.87 134.79,103.87 134.38,103.44 C133.77,102.81 133.68,102.46 133.74,100.75 C133.80,98.84 133.76,98.61 133.26,98.07 C132.75,97.51 132.60,97.07 132.69,96.42 C132.79,95.77 132.65,95.36 132.12,94.79 C131.86,94.51 131.68,94.15 131.63,93.79 C131.58,93.42 131.40,93.05 131.11,92.73 C130.82,92.40 130.63,92.04 130.58,91.67 C130.53,91.32 130.35,90.95 130.05,90.62 C129.77,90.29 129.58,89.94 129.53,89.57 C129.47,89.21 129.28,88.83 129.00,88.49 C128.73,88.17 128.53,87.78 128.47,87.42 C128.41,87.04 128.23,86.68 127.95,86.37 C127.65,86.05 127.48,85.69 127.42,85.31 C127.34,84.81 127.18,84.57 126.37,83.74 C125.55,82.89 125.39,82.65 125.32,82.16 C125.23,81.60 125.04,81.38 121.53,77.84 C117.78,74.06 117.40,73.74 116.76,73.74 C116.21,73.74 114.74,72.22 114.74,71.65 C114.74,70.88 115.21,70.58 116.37,70.58 C117.33,70.58 117.37,70.57 117.96,70.05 C118.57,69.53 118.57,69.53 121.12,69.53 C123.66,69.53 123.66,69.53 124.27,69.00 C124.88,68.47 124.88,68.47 131.12,68.47 C137.35,68.47 137.35,68.47 137.96,69.00 C138.57,69.53 138.57,69.53 140.06,69.53 C141.56,69.53 141.56,69.53 142.17,70.05 C142.76,70.57 142.81,70.58 143.75,70.58 C144.69,70.58 144.74,70.59 145.33,71.11 C145.92,71.62 145.96,71.63 146.92,71.63 C147.84,71.63 147.92,71.65 148.40,72.08 C148.72,72.38 149.14,72.59 149.55,72.68 C149.95,72.77 150.35,72.98 150.59,73.21 C150.83,73.44 151.24,73.64 151.64,73.74 C152.20,73.85 152.45,74.03 153.24,74.81 C154.04,75.60 154.27,75.76 154.82,75.86 C155.42,75.97 155.60,76.12 157.45,77.96 C159.31,79.81 159.48,79.96 160.08,80.07 C161.04,80.25 163.07,82.27 163.28,83.26 C163.41,83.83 163.57,84.07 164.34,84.85 C165.11,85.62 165.27,85.88 165.40,86.43 C165.48,86.84 165.68,87.24 165.92,87.48 C166.15,87.73 166.36,88.14 166.44,88.53 C166.54,88.95 166.76,89.36 167.04,89.68 C167.47,90.16 167.49,90.23 167.49,91.17 C167.49,92.12 167.52,92.16 168.02,92.75 C168.54,93.34 168.55,93.39 168.55,94.33 C168.55,95.27 168.57,95.32 169.07,95.91 C169.60,96.52 169.60,96.52 169.60,103.28 C169.60,110.04 169.60,110.04 169.21,110.49 C168.75,111.02 168.72,111.27 169.07,111.73 C169.42,112.17 169.41,112.37 169.00,112.92 C168.81,113.17 168.60,113.61 168.53,113.92 C168.46,114.21 168.23,114.64 168.02,114.86 C167.77,115.12 167.59,115.48 167.52,115.89 C167.44,116.32 167.26,116.66 166.99,116.95 C166.72,117.22 166.55,117.58 166.46,118.00 C166.39,118.42 166.21,118.77 165.94,119.05 C165.66,119.33 165.49,119.68 165.41,120.11 C165.34,120.53 165.16,120.87 164.88,121.15 C164.62,121.42 164.43,121.80 164.34,122.23 C164.20,122.87 164.06,123.04 160.81,126.27 C158.01,129.07 157.36,129.66 157.06,129.66 C156.62,129.66 156.26,129.83 155.68,130.34 C155.45,130.54 155.11,130.72 154.92,130.72 C154.52,130.72 154.15,130.89 153.58,131.39 C153.19,131.73 153.05,131.77 152.18,131.77 C151.23,131.77 151.18,131.78 150.59,132.29 C150.00,132.80 149.96,132.82 149.01,132.82 C148.07,132.82 148.02,132.83 147.43,133.35 C146.84,133.85 146.80,133.87 145.85,133.87 C144.92,133.87 144.86,133.85 144.27,133.35 Z M111.13,56.72 C112.48,55.75 112.63,55.41 112.63,53.12 C112.63,51.16 112.63,51.16 112.24,50.71 C111.61,49.97 111.75,49.61 112.73,49.45 C113.58,49.32 118.87,43.95 119.00,43.08 C119.08,42.54 119.26,42.33 121.63,39.93 C124.00,37.53 124.18,37.32 124.26,36.77 C124.35,36.21 124.54,35.99 127.43,33.08 C130.32,30.18 130.51,29.95 130.59,29.39 C130.67,28.85 130.85,28.63 132.69,26.76 C134.55,24.89 134.72,24.67 134.80,24.13 C134.89,23.59 135.06,23.38 136.96,21.46 C139.01,19.39 139.01,19.39 139.02,18.41 C139.02,17.52 139.05,17.40 139.45,16.91 C140.01,16.21 139.98,16.14 138.62,14.79 C137.49,13.67 137.49,13.67 136.38,13.67 C135.26,13.67 135.26,13.67 133.55,15.39 C131.99,16.95 131.81,17.17 131.64,17.81 C131.42,18.68 131.36,18.74 130.57,18.88 C129.69,19.04 128.60,20.14 128.47,20.99 C128.39,21.53 128.19,21.76 125.84,24.14 C123.47,26.53 123.29,26.75 123.21,27.29 C123.13,27.83 122.95,28.05 121.11,29.93 C119.25,31.81 119.08,32.02 119.00,32.56 C118.92,33.12 118.73,33.34 115.59,36.49 C111.92,40.18 112.21,39.99 111.31,39.26 C110.98,38.99 110.89,38.99 99.95,38.99 C88.93,38.99 88.93,38.99 88.41,39.45 C87.31,40.45 86.55,40.19 86.25,38.72 C86.15,38.20 85.86,37.98 85.19,37.87 C84.52,37.77 84.29,37.53 84.15,36.69 C84.06,36.24 83.78,35.88 82.04,34.14 C80.21,32.26 80.03,32.04 79.95,31.51 C79.86,30.97 79.68,30.75 77.84,28.87 C76.00,27.00 75.82,26.78 75.74,26.24 C75.65,25.69 75.47,25.47 73.11,23.08 C70.73,20.69 70.55,20.47 70.46,19.92 C70.38,19.37 70.19,19.15 67.56,16.51 C64.74,13.67 64.74,13.67 63.62,13.67 C62.51,13.67 62.51,13.67 61.38,14.79 C59.96,16.19 59.82,16.43 59.89,17.51 C59.95,18.35 59.95,18.35 62.00,20.41 C63.88,22.33 64.05,22.54 64.14,23.07 C64.22,23.63 64.39,23.83 66.77,26.23 C69.15,28.63 69.32,28.84 69.41,29.39 C69.49,29.94 69.66,30.15 71.52,32.02 C73.36,33.91 73.53,34.12 73.62,34.65 C73.71,35.21 73.89,35.43 76.78,38.34 C79.49,41.08 79.86,41.49 79.94,41.96 C80.07,42.73 80.06,42.71 82.16,44.80 C83.87,46.52 84.07,46.77 84.16,47.27 C84.28,48.03 84.56,48.35 85.23,48.43 C85.59,48.48 85.96,48.65 86.27,48.93 C86.56,49.17 87.01,49.40 87.31,49.45 C88.26,49.63 88.38,49.93 87.78,50.68 C87.57,50.95 87.36,51.39 87.32,51.66 C87.26,51.93 87.08,52.33 86.91,52.54 C86.38,53.16 86.47,53.48 87.39,54.32 C88.06,54.93 88.22,55.16 88.37,55.74 C88.69,57.00 87.63,56.89 99.99,56.89 C109.05,56.89 110.91,56.86 111.13,56.72 Z M90.99,50.39 C90.44,50.11 89.74,49.28 89.74,48.94 C89.74,48.58 91.96,46.37 92.32,46.37 C92.85,46.37 107.32,46.37 107.61,46.37 C108.05,46.37 110.26,48.54 110.26,48.96 C110.26,49.52 110.09,49.53 101.98,49.53 C94.21,49.53 94.21,49.53 93.67,50.02 C93.02,50.60 91.74,50.78 90.99,50.39 Z"/><circle cx="65.66" cy="173.65" r="5.26"/><circle cx="81.37" cy="183.28" r="5.26"/><circle cx="99.47" cy="186.63" r="5.26"/><circle cx="117.58" cy="183.28" r="5.26"/><circle cx="133.28" cy="173.65" r="5.26"/><circle cx="51.58" cy="189.30" r="4.21"/><circle cx="65.87" cy="199.31" r="4.21"/><circle cx="82.16" cy="205.56" r="4.21"/><circle cx="99.47" cy="207.68" r="4.21"/><circle cx="116.79" cy="205.56" r="4.21"/><circle cx="133.08" cy="199.31" r="4.21"/><circle cx="147.37" cy="189.30" r="4.21"/></g></g><path d="M0.771728515625 0.0 26.602197265625 -68.70869140625H48.056347656250004L73.932470703125 0.0H54.7783203125L50.69130859375 -11.937060546875001H23.258544921875L19.171533203125 0.0ZM27.6302734375 -25.328271484375H46.328271484375L41.384716796875004 -39.797998046875Q40.984716796875006 -40.906689453125004 40.461889648437506 -42.5382080078125Q39.939062500000006 -44.1697265625 39.393408203125006 -46.0468994140625Q38.847753906250006 -47.924072265625 38.302099609375006 -49.7968994140625Q37.7564453125 -51.6697265625 37.310791015625 -53.115380859375H36.64775390625Q36.156445312500004 -51.224072265625004 35.415136718750006 -48.787109375Q34.673828125 -46.350146484375 33.928173828125 -43.9686279296875Q33.18251953125 -41.587109375000004 32.573828125 -39.797998046875ZM116.70429687500001 1.2000000000000002Q105.55214843750001 1.2000000000000002 97.830419921875 -2.6630371093750003Q90.10869140625002 -6.526074218750001 86.104345703125 -14.430419921875002Q82.10000000000001 -22.334765625000003 82.10000000000001 -34.354345703125Q82.10000000000001 -52.1826171875 91.0358642578125 -61.045654296875Q99.97172851562502 -69.90869140625 116.70429687500001 -69.90869140625Q126.01948242187501 -69.90869140625 133.195556640625 -66.7641357421875Q140.37163085937502 -63.619580078125004 144.4488037109375 -57.3619873046875Q148.5259765625 -51.10439453125 148.5259765625 -41.7783203125H130.98701171875Q130.98701171875 -46.23486328125 129.2446044921875 -49.385961914062506Q127.50219726562501 -52.537060546875004 124.32717285156252 -54.228369140625006Q121.15214843750002 -55.919677734375 116.74125976562502 -55.919677734375Q111.08251953125 -55.919677734375 107.4792236328125 -53.6229248046875Q103.87592773437501 -51.326171875 102.18786621093751 -46.995703125000006Q100.49980468750002 -42.665234375000004 100.49980468750002 -36.59560546875V-32.1130859375Q100.49980468750002 -25.997802734375 102.21503906250001 -21.667333984375Q103.9302734375 -17.336865234375 107.4835693359375 -15.062939453125Q111.036865234375 -12.789013671875 116.63256835937501 -12.789013671875Q121.397802734375 -12.789013671875 124.72717285156251 -14.4031494140625Q128.05654296875002 -16.01728515625 129.826123046875 -19.1412109375Q131.595703125 -22.26513671875 131.595703125 -26.667333984375002H148.5259765625Q148.5259765625 -17.449951171875 144.580322265625 -11.2467041015625Q140.63466796875002 -5.04345703125 133.48576660156252 -1.921728515625Q126.33686523437501 1.2000000000000002 116.70429687500001 1.2000000000000002ZM194.904296875 1.2000000000000002Q183.7521484375 1.2000000000000002 176.03041992187502 -2.6630371093750003Q168.30869140625 -6.526074218750001 164.30434570312502 -14.430419921875002Q160.3 -22.334765625000003 160.3 -34.354345703125Q160.3 -52.1826171875 169.23586425781252 -61.045654296875Q178.171728515625 -69.90869140625 194.904296875 -69.90869140625Q204.219482421875 -69.90869140625 211.395556640625 -66.7641357421875Q218.571630859375 -63.619580078125004 222.6488037109375 -57.3619873046875Q226.72597656250002 -51.10439453125 226.72597656250002 -41.7783203125H209.18701171875Q209.18701171875 -46.23486328125 207.44460449218752 -49.385961914062506Q205.70219726562502 -52.537060546875004 202.5271728515625 -54.228369140625006Q199.3521484375 -55.919677734375 194.941259765625 -55.919677734375Q189.28251953125002 -55.919677734375 185.67922363281252 -53.6229248046875Q182.075927734375 -51.326171875 180.3878662109375 -46.995703125000006Q178.6998046875 -42.665234375000004 178.6998046875 -36.59560546875V-32.1130859375Q178.6998046875 -25.997802734375 180.4150390625 -21.667333984375Q182.13027343750002 -17.336865234375 185.68356933593753 -15.062939453125Q189.23686523437502 -12.789013671875 194.83256835937502 -12.789013671875Q199.59780273437502 -12.789013671875 202.92717285156252 -14.4031494140625Q206.25654296875 -16.01728515625 208.026123046875 -19.1412109375Q209.79570312500002 -22.26513671875 209.79570312500002 -26.667333984375002H226.72597656250002Q226.72597656250002 -17.449951171875 222.78032226562502 -11.2467041015625Q218.83466796875 -5.04345703125 211.6857666015625 -1.921728515625Q204.536865234375 1.2000000000000002 194.904296875 1.2000000000000002ZM234.771728515625 0.0 260.602197265625 -68.70869140625H282.05634765625L307.932470703125 0.0H288.7783203125L284.69130859375 -11.937060546875001H257.258544921875L253.171533203125 0.0ZM261.6302734375 -25.328271484375H280.328271484375L275.384716796875 -39.797998046875Q274.984716796875 -40.906689453125004 274.4618896484375 -42.5382080078125Q273.9390625 -44.1697265625 273.393408203125 -46.0468994140625Q272.84775390625 -47.924072265625 272.302099609375 -49.7968994140625Q271.7564453125 -51.6697265625 271.310791015625 -53.115380859375H270.64775390625Q270.1564453125 -51.224072265625004 269.41513671875 -48.787109375Q268.673828125 -46.350146484375 267.928173828125 -43.9686279296875Q267.18251953125 -41.587109375000004 266.573828125 -39.797998046875ZM319.09130859375 0.0V-68.70869140625H334.96943359375L359.97612304687505 -36.7953125Q360.693505859375 -35.9779296875 361.828271484375 -34.4659912109375Q362.963037109375 -32.954052734375004 364.07932128906253 -31.4377685546875Q365.19560546875005 -29.921484375000002 365.7216796875 -28.995410156250003L366.2216796875 -29.104101562500002Q366.16733398437503 -31.264941406250003 366.16733398437503 -33.3529541015625Q366.16733398437503 -35.440966796875 366.16733398437503 -36.7953125V-68.70869140625H382.797607421875V0.0H367.019482421875L340.49980468750005 -33.572021484375Q339.210693359375 -35.206787109375 338.0791748046875 -36.902441406250006Q336.94765625 -38.598095703125004 336.167236328125 -39.732861328125004L335.667236328125 -39.624169921875Q335.72158203125 -37.998095703125 335.72158203125 -36.3491943359375Q335.72158203125 -34.70029296875 335.72158203125 -33.572021484375V0.0ZM417.971728515625 0.0V-54.03056640625H395.69130859375V-68.70869140625H458.188916015625V-54.03056640625H435.9171875V0.0ZM464.571728515625 0.0 490.40219726562503 -68.70869140625H511.85634765625L537.732470703125 0.0H518.5783203125L514.49130859375 -11.937060546875001H487.058544921875L482.97153320312503 0.0ZM491.43027343750003 -25.328271484375H510.12827148437503L505.184716796875 -39.797998046875Q504.78471679687505 -40.906689453125004 504.26188964843755 -42.5382080078125Q503.73906250000005 -44.1697265625 503.19340820312505 -46.0468994140625Q502.64775390625005 -47.924072265625 502.10209960937505 -49.7968994140625Q501.5564453125 -51.6697265625 501.110791015625 -53.115380859375H500.44775390625Q499.9564453125 -51.224072265625004 499.21513671875005 -48.787109375Q498.473828125 -46.350146484375 497.728173828125 -43.9686279296875Q496.98251953125003 -41.587109375000004 496.373828125 -39.797998046875Z" fill="#FBD24E" transform="translate(174.47,69.97)"/><rect x="174.47" y="93.30" width="538.40" height="63.11" rx="11.36" fill="#FBD24E"/><path d="M8.477932373046876 0.0V-20.0452578125H0.7424945068359375V-23.324H20.055415893554688V-20.0452578125H12.269438720703127V0.0ZM32.413932373046876 0.0V-23.324H50.47988757324219V-20.070988159179688H36.20543872070313V-13.555910400390626H48.983887573242185V-10.302898559570313H36.20543872070313V-3.253011840820313H50.68388757324219V0.0ZM74.27253930664062 0.40800000000000003Q70.70253930664062 0.40800000000000003 68.19434826660157 -0.8748089599609377Q65.6861572265625 -2.1576179199218752 64.36796618652343 -4.830752746582031Q63.04977514648437 -7.503887573242188 63.04977514648437 -11.662Q63.04977514648437 -17.77465173339844 66.01696618652343 -20.75332586669922Q68.9841572265625 -23.732000000000003 74.28907861328125 -23.732000000000003Q77.22869653320312 -23.732000000000003 79.54942687988282 -22.754269653320314Q81.8701572265625 -21.776539306640625 83.21821343994141 -19.808213439941404Q84.56626965332032 -17.839887573242187 84.56626965332032 -14.821235839843752H80.697572265625Q80.697572265625 -16.703168212890628 79.9004150390625 -17.96299957275391Q79.1032578125 -19.22283093261719 77.66653887939452 -19.863774719238283Q76.22981994628906 -20.504718505859376 74.324 -20.504718505859376Q71.93757312011718 -20.504718505859376 70.28352832031248 -19.574774719238285Q68.6294835205078 -18.64483093261719 67.79924768066405 -16.761055786132815Q66.96901184082031 -14.877280639648438 66.96901184082031 -11.986382080078126V-11.246651733398439Q66.96901184082031 -8.371371093750001 67.79924768066405 -6.5041352539062505Q68.6294835205078 -4.6368994140625 70.27066314697265 -3.7280904541015625Q71.9118427734375 -2.819281494140625 74.33226965332031 -2.819281494140625Q76.30701098632812 -2.819281494140625 77.76946026611327 -3.4473601074218747Q79.23190954589843 -4.075438720703125 80.0332015991211 -5.335270080566406Q80.83449365234375 -6.595101440429688 80.83449365234375 -8.477033813476563H84.56626965332032Q84.56626965332032 -5.4418427734375 83.21453930664063 -3.4735169067382814Q81.86280895996094 -1.5051910400390627 79.5379437866211 -0.5485955200195314Q77.21307861328125 0.40800000000000003 74.27253930664062 0.40800000000000003Z" fill="#0B3FA8" transform="translate(406.67,134.88) scale(0.86)"/></g></svg></a>
+      <p style="margin-top:12px">ACCANTA TECNOLOGIA LTDA. · CNPJ 68.794.397/0001-74<br>Alameda do Ingá, 840 · sala 603 · Vale do Sereno · Nova Lima/MG · 34.006-042<br>(31) 99296-5152</p>
+    </div>
+    <div class="foot-nav">
+      <a href="#como">Como funciona</a><a href="#seguro">Segurança</a><a href="#preco">Quanto custa</a><a href="#duvidas">Dúvidas</a><a href="#conversa">Começar</a><a href="/termos.html">Termos e privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* calculadora */
+  var sel={dias:2,horas:2};
+  var outEl=document.getElementById('out'), outTxt=document.getElementById('outTxt');
+  function calc(){
+    var h=sel.dias*sel.horas*46, d=Math.round(h/8);
+    outEl.innerHTML=h.toLocaleString('pt-BR')+'<small>horas por ano</small>';
+    var f;
+    if(d>=40) f='São <b>'+d+' dias de trabalho</b> por ano montando cotação. Quase dois meses da sua farmácia dentro de uma planilha.';
+    else if(d>=20) f='São <b>'+d+' dias de trabalho</b> por ano montando cotação. Mais de um mês da sua farmácia gasto numa planilha — sem contar as horas recebendo fornecedor.';
+    else f='São <b>'+d+' dias de trabalho</b> por ano só nisso. Pouco? É mais de uma semana que podia estar em margem, mix e balcão.';
+    outTxt.innerHTML=f;
+  }
+  document.querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(){
+      var g=c.dataset.g;
+      document.querySelectorAll('.chip[data-g="'+g+'"]').forEach(function(o){o.setAttribute('aria-pressed','false')});
+      c.setAttribute('aria-pressed','true'); sel[g]=+c.dataset.v; calc();
+    });
+  });
+  calc();
+
+  /* campo de itens */
+  var TOTAL=3166, CHANGED=875;
+  var cv=document.getElementById('field'), ctx=cv.getContext('2d');
+  var tgl=document.getElementById('tgl'), countEl=document.getElementById('count'), sayEl=document.getElementById('say');
+  var cols=0,cell=0,gap=0,W=0,H=0,dpr=1;
+  var seed=20260822;
+  function rnd(){ seed=(seed*1664525+1013904223)%4294967296; return seed/4294967296; }
+  var flags=new Uint8Array(TOTAL), delays=new Float32Array(TOTAL), picked=0;
+  while(picked<CHANGED){ var i=Math.floor(rnd()*TOTAL); if(!flags[i]){flags[i]=1;delays[i]=rnd();picked++;} }
+  function layout(){
+    var box=cv.parentNode.getBoundingClientRect();
+    W=Math.max(240,Math.floor(box.width));
+    cell = W<560?4:(W<900?5:6); gap = W<560?1.5:2;
+    var p=cell+gap;
+    cols=Math.max(12,Math.floor((W+gap)/p));
+    H=Math.ceil(TOTAL/cols)*p-gap;
+    dpr=Math.min(window.devicePixelRatio||1,2);
+    cv.width=Math.floor(W*dpr); cv.height=Math.floor(H*dpr);
+    cv.style.width=W+'px'; cv.style.height=H+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  var SPREAD=900,FADE=420,t0=0,running=false,dir=0,prog=0,prog0=0;
+  function draw(p){
+    ctx.clearRect(0,0,W,H);
+    var pitch=cell+gap;
+    for(var i=0;i<TOTAL;i++){
+      var x=(i%cols)*pitch, y=Math.floor(i/cols)*pitch;
+      if(!flags[i]){ ctx.fillStyle='#1D3A54'; ctx.fillRect(x,y,cell,cell); continue; }
+      var l=(p*(SPREAD+FADE)-delays[i]*SPREAD)/FADE; l=l<0?0:(l>1?1:l);
+      if(l<=0){ ctx.fillStyle='#1D3A54'; ctx.fillRect(x,y,cell,cell); continue; }
+      if(l>.25){ ctx.globalAlpha=(l-.25)*.5; ctx.fillStyle='#F0A500'; ctx.fillRect(x-1.5,y-1.5,cell+3,cell+3); ctx.globalAlpha=1; }
+      var r=Math.round(29+(240-29)*l), g=Math.round(58+(165-58)*l), b=Math.round(84+(0-84)*l);
+      ctx.fillStyle='rgb('+r+','+g+','+b+')'; ctx.fillRect(x,y,cell,cell);
+    }
+  }
+  function setCount(p){ countEl.innerHTML='<b>'+Math.round(CHANGED*p).toLocaleString('pt-BR')+'</b> de 3.166'; }
+  function tick(ts){
+    if(!t0) t0=ts;
+    var d=(ts-t0)/(SPREAD+FADE);
+    prog = dir===1?Math.min(1,prog0+d):Math.max(0,prog0-d*2.2);
+    draw(prog); setCount(prog);
+    if((dir===1&&prog<1)||(dir===-1&&prog>0)) requestAnimationFrame(tick); else running=false;
+  }
+  function animate(to){
+    dir=to?1:-1; prog0=prog; t0=0;
+    if(reduce){ prog=to?1:0; draw(prog); setCount(prog); return; }
+    if(!running){ running=true; requestAnimationFrame(tick); }
+  }
+  var SAY_OFF='Cada quadrado é um item. Assim, decidido só pelo preço que aparece na planilha, é a conta rápida — a que dá tempo de fazer numa manhã.';
+  var SAY_ON='Com a conta completa, <b>875 itens trocam de fornecedor</b>. Mais de um quarto da compra estava indo para o lugar errado — e não dava para perceber olhando a planilha.';
+  tgl.addEventListener('change',function(){ animate(tgl.checked); sayEl.innerHTML=tgl.checked?SAY_ON:SAY_OFF; });
+  var rt; window.addEventListener('resize',function(){ clearTimeout(rt); rt=setTimeout(function(){layout();draw(prog);},140); });
+  layout(); draw(0); setCount(0);
+
+  /* recepção */
+  var ans={}, steps=document.querySelectorAll('.q-step');
+  var pips=[document.getElementById('p1'),document.getElementById('p2'),document.getElementById('p3')];
+  function show(n){
+    steps.forEach(function(s){ s.classList.toggle('on',+s.dataset.step===n); });
+    pips.forEach(function(p,idx){ p.classList.toggle('done', idx<Math.min(n,3)); });
+    if(n===4) render();
+  }
+  document.querySelectorAll('.opt').forEach(function(b){
+    b.addEventListener('click',function(){
+      ans[b.dataset.k]=b.dataset.v;
+      show(+b.closest('.q-step').dataset.step+1);
+      document.getElementById('recep').scrollIntoView({block:'center'});
+    });
+  });
+  document.querySelectorAll('.q-back').forEach(function(b){ b.addEventListener('click',function(){ show(+b.dataset.back); }); });
+
+  function render(){
+    var t,body;
+    if(ans.dor==='tempo'){ t='É exatamente para isso que ela existe.'; body='A parte que come a sua semana — montar, enviar, juntar as respostas, comparar — é a parte que a Accanta faz sozinha. <b>Você entra no começo e no fim.</b>'; }
+    else if(ans.dor==='duvida'){ t='A dúvida some quando a conta fica visível.'; body='Cada item vem com quem ganhou, por quanto e <b>por que ganhou</b>. Pedido mínimo e condição especial já entram no cálculo, e a linha continua sua para mudar antes de fechar.'; }
+    else if(ans.dor==='estoque'){ t='Então a conversa começa antes da cotação.'; body='A Accanta calcula quanto comprar de cada item pelo giro, pelo estoque e pelos dias de cobertura que você definir. <b>A quantidade certa é o primeiro filtro</b> — preço vem depois.'; }
+    else { t='Histórico é o que ela guarda melhor.'; body='Cada cotação, proposta e pedido ficam registrados e nada se apaga. <b>Da segunda compra em diante você já sabe quanto cada fornecedor cobrou da última vez.</b>'; }
+    if(ans.perfil==='assoc') body+=' E como você é associada: as condições que a central negociou entram na comparação, e no fim do período você vê quanto renderam.';
+    if(ans.perfil==='rede'||ans.perfil==='mais') body+=' Com mais de uma loja, cada CNPJ que emite pedido fica com os dados separados — e a assinatura acompanha essa estrutura.';
+    if(ans.hoje==='portal') body+=' Você já usa portal: a diferença aqui é que os fornecedores continuam sendo os seus, ninguém entra na negociação e a assinatura é fixa, sem taxa por cotação.';
+    if(ans.hoje==='rep') body+=' Comprando direto com representante, o ganho aparece já na primeira cotação: pela primeira vez as ofertas ficam lado a lado.';
+    document.getElementById('qTitle').textContent=t;
+    document.getElementById('qBody').innerHTML=body;
+    var msg='Olá! Vim pelo site da Accanta. Farmácia: '+({ind:'independente, uma loja',assoc:'associada a uma rede',rede:'pequena rede de 2 a 10 lojas',mais:'mais de 10 lojas'}[ans.perfil]||'-')
+      +'. Compro hoje: '+({planilha:'planilha por e-mail e WhatsApp',portal:'portal de cotação',rep:'direto com representantes',misto:'um pouco de cada'}[ans.hoje]||'-')
+      +'. O que mais incomoda: '+({tempo:'o tempo que toma',duvida:'não saber se comprei bem',estoque:'comprar demais ou faltar',controle:'não ter histórico'}[ans.dor]||'-')+'.';
+    document.getElementById('qWa').href='https://wa.me/5531992965152?text='+encodeURIComponent(msg);
+    document.getElementById('qMail').href='mailto:contato@accanta.com.br?subject='+encodeURIComponent('Accanta — vim pelo site')+'&body='+encodeURIComponent(msg);
+  }
+
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{threshold:.1,rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

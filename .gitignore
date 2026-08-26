@@ -1,0 +1,7 @@
+# Claude Code — configuração local
+.claude/settings.local.json
+
+# Lixo de sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store
