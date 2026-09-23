@@ -1,0 +1,8 @@
+# rotas antigas do site de cotação -> novas
+/index.html              /                    301!
+/demonstracao.html       /tec/cota/           301
+/demonstracao            /tec/cota/           301
+/termos.html             /termos/             301
+/termos                  /termos/             301
+/tec                     /tec/                301
+/representacoes          /representacoes/     301
