@@ -752,9 +752,18 @@ footer{position:relative;overflow:hidden;background:var(--ink);color:var(--soft)
 @font-face{font-family:'Nunito';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/nunito-regular.woff2) format('woff2')}
 @font-face{font-family:'Nunito';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/nunito-semibold.woff2) format('woff2')}
 @font-face{font-family:'Nunito';font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/nunito-bold.woff2) format('woff2')}
-.marca .frente{margin-left:14px;font-family:var(--ui);font-weight:700;font-size:19px;line-height:1;letter-spacing:0;color:#fff;white-space:nowrap}
+.marca{--mh:28px;gap:0!important}
+.marca .frente,.sig .frente{align-self:flex-end;font-family:var(--ui);font-weight:700;font-size:calc(var(--mh)*.862);line-height:1;letter-spacing:0;margin-left:calc(var(--mh)*.343);margin-bottom:calc(var(--mh)*-.06);color:#FBD24E;white-space:nowrap;text-transform:lowercase}
+.sig{display:flex;align-items:flex-end;margin:0;line-height:0}
+.sig img{display:block;height:var(--mh);width:auto;max-width:100%}
+.sig .frente{color:#0F2547}
+.arm .sig{--mh:clamp(26px,min(3vw,4vh),34px)}
+.pr .sig{--mh:clamp(22px,min(2.4vw,3.4vh),28px)}
+.prod-nome.sig{--mh:clamp(30px,min(4.6vw,6.8vh),56px)}
+
+.dec th,.dec .nota,.doc-meta{text-transform:none}
 .marca .logo.compacta{display:none}
-@media(max-width:600px){.marca .frente{font-size:15px;margin-left:11px}.marca .logo.completa{display:none}.marca .logo.compacta{display:block}}
+@media(max-width:600px){.marca{--mh:22px}.marca .logo.completa{display:none}.marca .logo.compacta{display:block}}
 </style>
 <noscript><style>.rv{opacity:1;transform:none}</style></noscript>
 </head>
